@@ -1,2 +1,2 @@
-# cangrejitos
-The supplementary data for the Potamon project
+# Cangrejitos
+The supplementary data for the Potamon project.
