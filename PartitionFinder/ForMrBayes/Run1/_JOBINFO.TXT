@@ -1,0 +1,14 @@
+Task\ label=PF1_1
+Task\ ID=2191562
+Tool=PARTITIONFINDER2_XSEDE
+created\ on=2020-05-25 02:32:26.0
+JobHandle=NGBW-JOB-PARTITIONFINDER2_XSEDE-B66B02EF0568470A9EB522B4DC37D073
+RunNumber=1
+resource=comet
+User\ ID=103509
+User\ Name=panizrm
+email=panizrm@hotmail.com
+Output=(all_results,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=8
+JOBID=33592689

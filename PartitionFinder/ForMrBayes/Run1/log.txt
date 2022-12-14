@@ -1,0 +1,170 @@
+INFO     | 2020-05-25 02:33:20,130 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2020-05-25 02:33:20,136 | config     | Setting 'alignment' to 'infile.phy'
+INFO     | 2020-05-25 02:33:20,136 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2020-05-25 02:33:20,136 | parser     | You set 'models' to: mrbayes
+INFO     | 2020-05-25 02:33:20,189 | model_load | This analysis will use the following 24 models of molecular evolution
+INFO     | 2020-05-25 02:33:20,190 | model_load | JC, K80, SYM, F81, HKY, GTR, JC+G, K80+G, SYM+G, F81+G, HKY+G, GTR+G, JC+I, K80+I, SYM+I, F81+I, HKY+I, GTR+I, JC+I+G, K80+I+G, SYM+I+G, F81+I+G, HKY+I+G, GTR+I+G
+INFO     | 2020-05-25 02:33:20,190 | config     | Setting 'model_selection' to 'bic'
+INFO     | 2020-05-25 02:33:20,195 | config     | Setting 'search' to 'greedy'
+INFO     | 2020-05-25 02:33:20,195 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2020-05-25 02:33:20,195 | config     | Looking for alignment file './infile.phy'...
+INFO     | 2020-05-25 02:33:20,195 | analysis   | Beginning Analysis
+INFO     | 2020-05-25 02:33:23,273 | alignment  | Reading alignment file './infile.phy'
+INFO     | 2020-05-25 02:33:23,379 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2020-05-25 02:33:23,381 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2020-05-25 02:33:23,386 | raxml      | Using a separate GTR+G model for each data block
+INFO     | 2020-05-25 02:33:58,389 | raxml      | Estimating GTR+G branch lengths on ML tree using all partitions
+INFO     | 2020-05-25 02:34:14,123 | raxml      | ML topology estimation finished
+INFO     | 2020-05-25 02:34:14,129 | analysis_m | Performing Greedy Analysis
+INFO     | 2020-05-25 02:34:14,129 | analysis_m |    *** Analysing starting scheme ***
+INFO     | 2020-05-25 02:35:17,154 | progress   |       Finished subset 1/11, 9.09 percent done
+INFO     | 2020-05-25 02:36:14,888 | progress   |       Finished subset 2/11, 18.18 percent done
+INFO     | 2020-05-25 02:37:43,315 | progress   |       Finished subset 3/11, 27.27 percent done
+INFO     | 2020-05-25 02:38:55,951 | progress   |       Finished subset 4/11, 36.36 percent done
+INFO     | 2020-05-25 02:39:35,227 | progress   |       Finished subset 5/11, 45.45 percent done
+INFO     | 2020-05-25 02:39:43,171 | progress   |       Finished subset 6/11, 54.55 percent done
+INFO     | 2020-05-25 02:40:12,803 | progress   |       Finished subset 7/11, 63.64 percent done
+INFO     | 2020-05-25 02:40:44,690 | progress   |       Finished subset 8/11, 72.73 percent done
+INFO     | 2020-05-25 02:41:09,119 | progress   |       Finished subset 9/11, 81.82 percent done
+INFO     | 2020-05-25 02:41:33,737 | progress   |       Finished subset 10/11, 90.91 percent done
+INFO     | 2020-05-25 02:41:39,792 | progress   |       Finished subset 11/11, 100.00 percent done
+INFO     | 2020-05-25 02:41:39,805 | analysis_m |    ***Greedy algorithm step 1***
+INFO     | 2020-05-25 02:41:39,806 | analysis_m |       Analysing 55 new subset pairs
+INFO     | 2020-05-25 02:43:52,424 | progress   |       Finished subset 1/55, 1.82 percent done
+INFO     | 2020-05-25 02:48:05,660 | progress   |       Finished subset 2/55, 3.64 percent done
+INFO     | 2020-05-25 02:48:06,632 | progress   |       Finished subset 3/55, 5.45 percent done
+INFO     | 2020-05-25 02:50:49,907 | progress   |       Finished subset 4/55, 7.27 percent done
+INFO     | 2020-05-25 02:52:00,175 | progress   |       Finished subset 5/55, 9.09 percent done
+INFO     | 2020-05-25 02:55:46,346 | progress   |       Finished subset 6/55, 10.91 percent done
+INFO     | 2020-05-25 02:55:53,905 | progress   |       Finished subset 7/55, 12.73 percent done
+INFO     | 2020-05-25 02:59:45,837 | progress   |       Finished subset 8/55, 14.55 percent done
+INFO     | 2020-05-25 02:59:58,122 | progress   |       Finished subset 9/55, 16.36 percent done
+INFO     | 2020-05-25 03:01:18,394 | progress   |       Finished subset 10/55, 18.18 percent done
+INFO     | 2020-05-25 03:04:32,737 | progress   |       Finished subset 11/55, 20.00 percent done
+INFO     | 2020-05-25 03:05:03,062 | progress   |       Finished subset 12/55, 21.82 percent done
+INFO     | 2020-05-25 03:08:03,008 | progress   |       Finished subset 13/55, 23.64 percent done
+INFO     | 2020-05-25 03:08:05,605 | progress   |       Finished subset 14/55, 25.45 percent done
+INFO     | 2020-05-25 03:10:04,872 | progress   |       Finished subset 15/55, 27.27 percent done
+INFO     | 2020-05-25 03:13:37,744 | progress   |       Finished subset 16/55, 29.09 percent done
+INFO     | 2020-05-25 03:13:49,918 | progress   |       Finished subset 17/55, 30.91 percent done
+INFO     | 2020-05-25 03:15:13,192 | progress   |       Finished subset 18/55, 32.73 percent done
+INFO     | 2020-05-25 03:16:22,758 | progress   |       Finished subset 19/55, 34.55 percent done
+INFO     | 2020-05-25 03:18:06,241 | progress   |       Finished subset 20/55, 36.36 percent done
+INFO     | 2020-05-25 03:19:33,891 | progress   |       Finished subset 21/55, 38.18 percent done
+INFO     | 2020-05-25 03:21:37,536 | progress   |       Finished subset 22/55, 40.00 percent done
+INFO     | 2020-05-25 03:22:44,784 | progress   |       Finished subset 23/55, 41.82 percent done
+INFO     | 2020-05-25 03:23:32,473 | progress   |       Finished subset 24/55, 43.64 percent done
+INFO     | 2020-05-25 03:25:25,340 | progress   |       Finished subset 25/55, 45.45 percent done
+INFO     | 2020-05-25 03:26:34,363 | progress   |       Finished subset 26/55, 47.27 percent done
+INFO     | 2020-05-25 03:27:34,933 | progress   |       Finished subset 27/55, 49.09 percent done
+INFO     | 2020-05-25 03:28:32,129 | progress   |       Finished subset 28/55, 50.91 percent done
+INFO     | 2020-05-25 03:30:09,904 | progress   |       Finished subset 29/55, 52.73 percent done
+INFO     | 2020-05-25 03:31:08,277 | progress   |       Finished subset 30/55, 54.55 percent done
+INFO     | 2020-05-25 03:31:51,107 | progress   |       Finished subset 31/55, 56.36 percent done
+INFO     | 2020-05-25 03:33:43,129 | progress   |       Finished subset 32/55, 58.18 percent done
+INFO     | 2020-05-25 03:34:39,689 | progress   |       Finished subset 33/55, 60.00 percent done
+INFO     | 2020-05-25 03:36:19,055 | progress   |       Finished subset 34/55, 61.82 percent done
+INFO     | 2020-05-25 03:37:21,634 | progress   |       Finished subset 35/55, 63.64 percent done
+INFO     | 2020-05-25 03:39:10,754 | progress   |       Finished subset 36/55, 65.45 percent done
+INFO     | 2020-05-25 03:40:05,503 | progress   |       Finished subset 37/55, 67.27 percent done
+INFO     | 2020-05-25 03:40:31,221 | progress   |       Finished subset 38/55, 69.09 percent done
+INFO     | 2020-05-25 03:42:04,578 | progress   |       Finished subset 39/55, 70.91 percent done
+INFO     | 2020-05-25 03:42:49,759 | progress   |       Finished subset 40/55, 72.73 percent done
+INFO     | 2020-05-25 03:43:40,496 | progress   |       Finished subset 41/55, 74.55 percent done
+INFO     | 2020-05-25 03:45:06,287 | progress   |       Finished subset 42/55, 76.36 percent done
+INFO     | 2020-05-25 03:45:54,311 | progress   |       Finished subset 43/55, 78.18 percent done
+INFO     | 2020-05-25 03:46:44,451 | progress   |       Finished subset 44/55, 80.00 percent done
+INFO     | 2020-05-25 03:47:56,539 | progress   |       Finished subset 45/55, 81.82 percent done
+INFO     | 2020-05-25 03:48:52,232 | progress   |       Finished subset 46/55, 83.64 percent done
+INFO     | 2020-05-25 03:50:45,852 | progress   |       Finished subset 47/55, 85.45 percent done
+INFO     | 2020-05-25 03:50:50,291 | progress   |       Finished subset 48/55, 87.27 percent done
+INFO     | 2020-05-25 03:51:39,058 | progress   |       Finished subset 49/55, 89.09 percent done
+INFO     | 2020-05-25 03:53:07,022 | progress   |       Finished subset 50/55, 90.91 percent done
+INFO     | 2020-05-25 03:53:40,587 | progress   |       Finished subset 51/55, 92.73 percent done
+INFO     | 2020-05-25 03:54:07,567 | progress   |       Finished subset 52/55, 94.55 percent done
+INFO     | 2020-05-25 03:55:02,229 | progress   |       Finished subset 53/55, 96.36 percent done
+INFO     | 2020-05-25 03:55:23,784 | progress   |       Finished subset 54/55, 98.18 percent done
+INFO     | 2020-05-25 03:55:53,146 | progress   |       Finished subset 55/55, 100.00 percent done
+INFO     | 2020-05-25 03:55:53,147 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2020-05-25 03:55:53,168 | analysis_m |       Best scheme combines subsets: 'COI' and 'Cytb'
+INFO     | 2020-05-25 03:55:53,168 | analysis_m |       The best scheme improves the bic score by 88.38 to 77788.4
+INFO     | 2020-05-25 03:55:53,180 | analysis_m |    ***Greedy algorithm step 2***
+INFO     | 2020-05-25 03:55:53,181 | analysis_m |       Analysing 9 new subset pairs
+INFO     | 2020-05-25 03:59:15,647 | progress   |       Finished subset 1/9, 11.11 percent done
+INFO     | 2020-05-25 04:02:00,814 | progress   |       Finished subset 2/9, 22.22 percent done
+INFO     | 2020-05-25 04:04:25,511 | progress   |       Finished subset 3/9, 33.33 percent done
+INFO     | 2020-05-25 04:06:34,248 | progress   |       Finished subset 4/9, 44.44 percent done
+INFO     | 2020-05-25 04:09:12,249 | progress   |       Finished subset 5/9, 55.56 percent done
+INFO     | 2020-05-25 04:11:13,784 | progress   |       Finished subset 6/9, 66.67 percent done
+INFO     | 2020-05-25 04:14:02,806 | progress   |       Finished subset 7/9, 77.78 percent done
+INFO     | 2020-05-25 04:16:35,460 | progress   |       Finished subset 8/9, 88.89 percent done
+INFO     | 2020-05-25 04:17:49,730 | progress   |       Finished subset 9/9, 100.00 percent done
+INFO     | 2020-05-25 04:17:49,731 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2020-05-25 04:17:49,736 | analysis_m |       Best scheme combines subsets: '16S' and '12S'
+INFO     | 2020-05-25 04:17:49,736 | analysis_m |       The best scheme improves the bic score by 75.56 to 77712.8
+INFO     | 2020-05-25 04:17:49,746 | analysis_m |    ***Greedy algorithm step 3***
+INFO     | 2020-05-25 04:17:49,747 | analysis_m |       Analysing 8 new subset pairs
+INFO     | 2020-05-25 04:21:48,579 | progress   |       Finished subset 1/8, 12.50 percent done
+INFO     | 2020-05-25 04:23:28,363 | progress   |       Finished subset 2/8, 25.00 percent done
+INFO     | 2020-05-25 04:25:32,980 | progress   |       Finished subset 3/8, 37.50 percent done
+INFO     | 2020-05-25 04:26:50,746 | progress   |       Finished subset 4/8, 50.00 percent done
+INFO     | 2020-05-25 04:28:28,333 | progress   |       Finished subset 5/8, 62.50 percent done
+INFO     | 2020-05-25 04:29:53,469 | progress   |       Finished subset 6/8, 75.00 percent done
+INFO     | 2020-05-25 04:33:32,028 | progress   |       Finished subset 7/8, 87.50 percent done
+INFO     | 2020-05-25 04:35:47,263 | progress   |       Finished subset 8/8, 100.00 percent done
+INFO     | 2020-05-25 04:35:47,265 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2020-05-25 04:35:47,270 | analysis_m |       Best scheme combines subsets: 'tRNA' and '16S, 12S'
+INFO     | 2020-05-25 04:35:47,270 | analysis_m |       The best scheme improves the bic score by 47.50 to 77665.3
+INFO     | 2020-05-25 04:35:47,281 | analysis_m |    ***Greedy algorithm step 4***
+INFO     | 2020-05-25 04:35:47,282 | analysis_m |       Analysing 7 new subset pairs
+INFO     | 2020-05-25 04:39:44,536 | progress   |       Finished subset 1/7, 14.29 percent done
+INFO     | 2020-05-25 04:41:18,171 | progress   |       Finished subset 2/7, 28.57 percent done
+INFO     | 2020-05-25 04:43:29,881 | progress   |       Finished subset 3/7, 42.86 percent done
+INFO     | 2020-05-25 04:45:23,883 | progress   |       Finished subset 4/7, 57.14 percent done
+INFO     | 2020-05-25 04:47:04,194 | progress   |       Finished subset 5/7, 71.43 percent done
+INFO     | 2020-05-25 04:48:37,636 | progress   |       Finished subset 6/7, 85.71 percent done
+INFO     | 2020-05-25 04:52:34,863 | progress   |       Finished subset 7/7, 100.00 percent done
+INFO     | 2020-05-25 04:52:34,864 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2020-05-25 04:52:34,868 | analysis_m |       Best scheme combines subsets: '28S' and 'PEPCK'
+INFO     | 2020-05-25 04:52:34,868 | analysis_m |       The best scheme improves the bic score by 25.45 to 77639.8
+INFO     | 2020-05-25 04:52:34,879 | analysis_m |    ***Greedy algorithm step 5***
+INFO     | 2020-05-25 04:52:34,879 | analysis_m |       Analysing 6 new subset pairs
+INFO     | 2020-05-25 04:57:01,978 | progress   |       Finished subset 1/6, 16.67 percent done
+INFO     | 2020-05-25 04:58:58,156 | progress   |       Finished subset 2/6, 33.33 percent done
+INFO     | 2020-05-25 05:02:24,998 | progress   |       Finished subset 3/6, 50.00 percent done
+INFO     | 2020-05-25 05:05:16,944 | progress   |       Finished subset 4/6, 66.67 percent done
+INFO     | 2020-05-25 05:06:29,678 | progress   |       Finished subset 5/6, 83.33 percent done
+INFO     | 2020-05-25 05:08:32,377 | progress   |       Finished subset 6/6, 100.00 percent done
+INFO     | 2020-05-25 05:08:32,378 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2020-05-25 05:08:32,383 | analysis_m |       Best scheme combines subsets: 'enolase' and 'NaK'
+INFO     | 2020-05-25 05:08:32,383 | analysis_m |       The best scheme improves the bic score by 14.08 to 77625.8
+INFO     | 2020-05-25 05:08:32,393 | analysis_m |    ***Greedy algorithm step 6***
+INFO     | 2020-05-25 05:08:32,394 | analysis_m |       Analysing 5 new subset pairs
+INFO     | 2020-05-25 05:12:05,519 | progress   |       Finished subset 1/5, 20.00 percent done
+INFO     | 2020-05-25 05:16:38,518 | progress   |       Finished subset 2/5, 40.00 percent done
+INFO     | 2020-05-25 05:16:53,488 | progress   |       Finished subset 3/5, 60.00 percent done
+INFO     | 2020-05-25 05:19:24,656 | progress   |       Finished subset 4/5, 80.00 percent done
+INFO     | 2020-05-25 05:20:02,879 | progress   |       Finished subset 5/5, 100.00 percent done
+INFO     | 2020-05-25 05:20:02,880 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2020-05-25 05:20:02,882 | analysis_m |       Found no schemes that improve the score, stopping
+INFO     | 2020-05-25 05:20:02,882 | analysis_m |    Greedy algorithm finished after 6 steps
+INFO     | 2020-05-25 05:20:02,882 | analysis_m |    Best scoring scheme is scheme step_5, with bic score of 77625.770
+INFO     | 2020-05-25 05:20:02,887 | model_util |    Information on best scheme is here: ./analysis/best_scheme.txt
+INFO     | 2020-05-25 05:20:02,926 | model_util |    
+INFO     | 2020-05-25 05:20:02,926 | model_util |    
+INFO     | 2020-05-25 05:20:02,926 | model_util |    *Citations for this analysis*
+INFO     | 2020-05-25 05:20:02,926 | model_util |    -----------------------------
+INFO     | 2020-05-25 05:20:02,926 | model_util |    
+INFO     | 2020-05-25 05:20:02,926 | model_util |    If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+INFO     | 2020-05-25 05:20:02,926 | model_util |    
+INFO     | 2020-05-25 05:20:02,926 | model_util |    For the version of PartitionFinder you used, please cite:
+INFO     | 2020-05-25 05:20:02,926 | model_util |    Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+INFO     | 2020-05-25 05:20:02,926 | model_util |    
+INFO     | 2020-05-25 05:20:02,926 | model_util |    For the greedy algorithm you used, please cite:
+INFO     | 2020-05-25 05:20:02,926 | model_util |    Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+INFO     | 2020-05-25 05:20:02,927 | model_util |    
+INFO     | 2020-05-25 05:20:02,927 | model_util |    Your analysis also used PhyML, so please cite:
+INFO     | 2020-05-25 05:20:02,927 | model_util |    Guindon, S., Dufayard, J. F., Lefort, V., Anisimova, M., Hordijk, W., & Gascuel, O. (2010). New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. Systematic biology, 59(3), 307-321.
+INFO     | 2020-05-25 05:20:02,927 | model_util |    
+INFO     | 2020-05-25 05:20:02,936 | main       | Total processing time: 2:46:42 (h:m:s)
+INFO     | 2020-05-25 05:20:02,936 | main       | Processing complete.

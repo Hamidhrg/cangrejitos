@@ -1,0 +1,1163 @@
+INFO     | 2021-01-14 05:54:13,484 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2021-01-14 05:54:13,487 | config     | Setting 'alignment' to 'Concat2reducido.phy'
+INFO     | 2021-01-14 05:54:13,487 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2021-01-14 05:54:13,487 | parser     | You set 'models' to: beast
+INFO     | 2021-01-14 05:54:13,666 | model_load | This analysis will use the following 40 models of molecular evolution
+INFO     | 2021-01-14 05:54:13,667 | model_load | JC, K80, TRNEF, SYM, HKY, TRN, GTR, HKY+X, TRN+X, GTR+X, JC+G, K80+G, TRNEF+G, SYM+G, HKY+G, TRN+G, GTR+G, HKY+G+X, TRN+G+X, GTR+G+X, JC+I, K80+I, TRNEF+I, SYM+I, HKY+I, TRN+I, GTR+I, HKY+I+X, TRN+I+X, GTR+I+X, JC+I+G, K80+I+G, TRNEF+I+G, SYM+I+G, HKY+I+G, TRN+I+G, GTR+I+G, HKY+I+G+X, TRN+I+G+X, GTR+I+G+X
+INFO     | 2021-01-14 05:54:13,667 | config     | Setting 'model_selection' to 'bic'
+ERROR    | 2021-01-14 05:54:13,688 | parser     | There was a problem loading your .cfg file, please check and try again
+ERROR    | 2021-01-14 05:54:13,688 | parser     | Expected "[schemes]" (at char 716), (line:32, col:1)
+INFO     | 2021-01-14 05:54:13,688 | parser     | It looks like the '[schemes]' option might be missing or in the wrong place. Or perhaps something is wrong in the lines just before the '[schemes]' option is missing. Please double check the configuration file and try again
+ERROR    | 2021-01-14 05:54:13,688 | main       | Failed to run. See previous errors.
+INFO     | 2021-01-14 05:55:06,740 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2021-01-14 05:55:06,743 | config     | Setting 'alignment' to 'Concat2reducido.phy'
+INFO     | 2021-01-14 05:55:06,743 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2021-01-14 05:55:06,743 | parser     | You set 'models' to: beast
+INFO     | 2021-01-14 05:55:06,750 | model_load | This analysis will use the following 40 models of molecular evolution
+INFO     | 2021-01-14 05:55:06,750 | model_load | JC, K80, TRNEF, SYM, HKY, TRN, GTR, HKY+X, TRN+X, GTR+X, JC+G, K80+G, TRNEF+G, SYM+G, HKY+G, TRN+G, GTR+G, HKY+G+X, TRN+G+X, GTR+G+X, JC+I, K80+I, TRNEF+I, SYM+I, HKY+I, TRN+I, GTR+I, HKY+I+X, TRN+I+X, GTR+I+X, JC+I+G, K80+I+G, TRNEF+I+G, SYM+I+G, HKY+I+G, TRN+I+G, GTR+I+G, HKY+I+G+X, TRN+I+G+X, GTR+I+G+X
+INFO     | 2021-01-14 05:55:06,751 | config     | Setting 'model_selection' to 'bic'
+INFO     | 2021-01-14 05:55:06,761 | config     | Setting 'search' to 'greedy'
+INFO     | 2021-01-14 05:55:06,761 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2021-01-14 05:55:06,761 | config     | Looking for alignment file './Concat2reducido.phy'...
+INFO     | 2021-01-14 05:55:06,764 | threadpool | Using 8 cpus
+INFO     | 2021-01-14 05:55:06,764 | analysis   | Beginning Analysis
+INFO     | 2021-01-14 05:55:07,189 | alignment  | Reading alignment file './Concat2reducido.phy'
+INFO     | 2021-01-14 05:55:07,216 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2021-01-14 05:55:07,217 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2021-01-14 05:55:07,217 | raxml      | Using a separate GTR+G model for each data block
+INFO     | 2021-01-14 05:55:21,964 | raxml      | Estimating GTR+G branch lengths on ML tree using all partitions
+INFO     | 2021-01-14 05:55:31,245 | raxml      | ML topology estimation finished
+INFO     | 2021-01-14 05:55:31,350 | analysis_m | Performing Greedy Analysis
+INFO     | 2021-01-14 05:55:31,350 | analysis_m |    *** Analysing starting scheme ***
+INFO     | 2021-01-14 05:55:46,762 | progress   |       Finished subset 1/33, 3.03 percent done
+INFO     | 2021-01-14 05:56:15,953 | progress   |       Finished subset 2/33, 6.06 percent done
+INFO     | 2021-01-14 05:56:25,835 | progress   |       Finished subset 3/33, 9.09 percent done
+INFO     | 2021-01-14 05:56:35,099 | progress   |       Finished subset 4/33, 12.12 percent done
+INFO     | 2021-01-14 05:56:59,245 | progress   |       Finished subset 5/33, 15.15 percent done
+INFO     | 2021-01-14 05:57:33,193 | progress   |       Finished subset 6/33, 18.18 percent done
+INFO     | 2021-01-14 05:57:39,914 | progress   |       Finished subset 7/33, 21.21 percent done
+INFO     | 2021-01-14 05:57:48,269 | progress   |       Finished subset 8/33, 24.24 percent done
+INFO     | 2021-01-14 05:57:56,100 | progress   |       Finished subset 9/33, 27.27 percent done
+INFO     | 2021-01-14 05:58:14,122 | progress   |       Finished subset 10/33, 30.30 percent done
+INFO     | 2021-01-14 05:58:31,937 | progress   |       Finished subset 11/33, 33.33 percent done
+INFO     | 2021-01-14 05:58:49,157 | progress   |       Finished subset 12/33, 36.36 percent done
+INFO     | 2021-01-14 05:58:56,207 | progress   |       Finished subset 13/33, 39.39 percent done
+INFO     | 2021-01-14 05:59:01,755 | progress   |       Finished subset 14/33, 42.42 percent done
+INFO     | 2021-01-14 05:59:06,959 | progress   |       Finished subset 15/33, 45.45 percent done
+INFO     | 2021-01-14 05:59:11,745 | progress   |       Finished subset 16/33, 48.48 percent done
+INFO     | 2021-01-14 05:59:17,972 | progress   |       Finished subset 17/33, 51.52 percent done
+INFO     | 2021-01-14 05:59:20,656 | progress   |       Finished subset 18/33, 54.55 percent done
+INFO     | 2021-01-14 05:59:36,491 | progress   |       Finished subset 19/33, 57.58 percent done
+INFO     | 2021-01-14 05:59:45,741 | progress   |       Finished subset 20/33, 60.61 percent done
+INFO     | 2021-01-14 05:59:57,374 | progress   |       Finished subset 21/33, 63.64 percent done
+INFO     | 2021-01-14 06:00:01,780 | progress   |       Finished subset 22/33, 66.67 percent done
+INFO     | 2021-01-14 06:00:06,853 | progress   |       Finished subset 23/33, 69.70 percent done
+INFO     | 2021-01-14 06:00:21,949 | progress   |       Finished subset 24/33, 72.73 percent done
+INFO     | 2021-01-14 06:00:25,167 | progress   |       Finished subset 25/33, 75.76 percent done
+INFO     | 2021-01-14 06:00:29,891 | progress   |       Finished subset 26/33, 78.79 percent done
+INFO     | 2021-01-14 06:00:44,790 | progress   |       Finished subset 27/33, 81.82 percent done
+INFO     | 2021-01-14 06:00:53,108 | progress   |       Finished subset 28/33, 84.85 percent done
+INFO     | 2021-01-14 06:00:58,809 | progress   |       Finished subset 29/33, 87.88 percent done
+INFO     | 2021-01-14 06:01:03,449 | progress   |       Finished subset 30/33, 90.91 percent done
+INFO     | 2021-01-14 06:01:07,102 | progress   |       Finished subset 31/33, 93.94 percent done
+INFO     | 2021-01-14 06:01:12,857 | progress   |       Finished subset 32/33, 96.97 percent done
+INFO     | 2021-01-14 06:01:14,886 | progress   |       Finished subset 33/33, 100.00 percent done
+INFO     | 2021-01-14 06:01:14,903 | analysis_m |    ***Greedy algorithm step 1***
+INFO     | 2021-01-14 06:01:14,951 | analysis_m |       Analysing 528 new subset pairs
+INFO     | 2021-01-14 06:02:00,184 | progress   |       Finished subset 1/528, 0.19 percent done
+INFO     | 2021-01-14 06:02:20,757 | progress   |       Finished subset 2/528, 0.38 percent done
+INFO     | 2021-01-14 06:03:03,834 | progress   |       Finished subset 3/528, 0.57 percent done
+INFO     | 2021-01-14 06:03:50,742 | progress   |       Finished subset 4/528, 0.76 percent done
+INFO     | 2021-01-14 06:04:22,707 | progress   |       Finished subset 5/528, 0.95 percent done
+INFO     | 2021-01-14 06:05:04,353 | progress   |       Finished subset 6/528, 1.14 percent done
+INFO     | 2021-01-14 06:05:19,975 | progress   |       Finished subset 7/528, 1.33 percent done
+INFO     | 2021-01-14 06:06:06,006 | progress   |       Finished subset 8/528, 1.52 percent done
+INFO     | 2021-01-14 06:06:18,800 | progress   |       Finished subset 9/528, 1.70 percent done
+INFO     | 2021-01-14 06:07:22,826 | progress   |       Finished subset 10/528, 1.89 percent done
+INFO     | 2021-01-14 06:08:16,840 | progress   |       Finished subset 11/528, 2.08 percent done
+INFO     | 2021-01-14 06:09:00,999 | progress   |       Finished subset 12/528, 2.27 percent done
+INFO     | 2021-01-14 06:09:20,231 | progress   |       Finished subset 13/528, 2.46 percent done
+INFO     | 2021-01-14 06:10:16,566 | progress   |       Finished subset 14/528, 2.65 percent done
+INFO     | 2021-01-14 06:11:03,102 | progress   |       Finished subset 15/528, 2.84 percent done
+INFO     | 2021-01-14 06:11:44,170 | progress   |       Finished subset 16/528, 3.03 percent done
+INFO     | 2021-01-14 06:12:05,637 | progress   |       Finished subset 17/528, 3.22 percent done
+INFO     | 2021-01-14 06:12:56,957 | progress   |       Finished subset 18/528, 3.41 percent done
+INFO     | 2021-01-14 06:13:08,925 | progress   |       Finished subset 19/528, 3.60 percent done
+INFO     | 2021-01-14 06:13:55,363 | progress   |       Finished subset 20/528, 3.79 percent done
+INFO     | 2021-01-14 06:13:59,371 | progress   |       Finished subset 21/528, 3.98 percent done
+INFO     | 2021-01-14 06:14:16,370 | progress   |       Finished subset 22/528, 4.17 percent done
+INFO     | 2021-01-14 06:15:00,371 | progress   |       Finished subset 23/528, 4.36 percent done
+INFO     | 2021-01-14 06:15:16,111 | progress   |       Finished subset 24/528, 4.55 percent done
+INFO     | 2021-01-14 06:16:05,021 | progress   |       Finished subset 25/528, 4.73 percent done
+INFO     | 2021-01-14 06:17:07,885 | progress   |       Finished subset 26/528, 4.92 percent done
+INFO     | 2021-01-14 06:17:10,034 | progress   |       Finished subset 27/528, 5.11 percent done
+INFO     | 2021-01-14 06:17:25,514 | progress   |       Finished subset 28/528, 5.30 percent done
+INFO     | 2021-01-14 06:18:28,077 | progress   |       Finished subset 29/528, 5.49 percent done
+INFO     | 2021-01-14 06:19:15,298 | progress   |       Finished subset 30/528, 5.68 percent done
+INFO     | 2021-01-14 06:20:11,500 | progress   |       Finished subset 31/528, 5.87 percent done
+INFO     | 2021-01-14 06:20:41,080 | progress   |       Finished subset 32/528, 6.06 percent done
+INFO     | 2021-01-14 06:21:17,411 | progress   |       Finished subset 33/528, 6.25 percent done
+INFO     | 2021-01-14 06:21:45,965 | progress   |       Finished subset 34/528, 6.44 percent done
+INFO     | 2021-01-14 06:21:57,617 | progress   |       Finished subset 35/528, 6.63 percent done
+INFO     | 2021-01-14 06:22:46,266 | progress   |       Finished subset 36/528, 6.82 percent done
+INFO     | 2021-01-14 06:23:28,060 | progress   |       Finished subset 37/528, 7.01 percent done
+INFO     | 2021-01-14 06:23:59,761 | progress   |       Finished subset 38/528, 7.20 percent done
+INFO     | 2021-01-14 06:24:33,419 | progress   |       Finished subset 39/528, 7.39 percent done
+INFO     | 2021-01-14 06:25:24,546 | progress   |       Finished subset 40/528, 7.58 percent done
+INFO     | 2021-01-14 06:26:07,475 | progress   |       Finished subset 41/528, 7.77 percent done
+INFO     | 2021-01-14 06:26:50,625 | progress   |       Finished subset 42/528, 7.95 percent done
+INFO     | 2021-01-14 06:27:14,373 | progress   |       Finished subset 43/528, 8.14 percent done
+INFO     | 2021-01-14 06:27:58,393 | progress   |       Finished subset 44/528, 8.33 percent done
+INFO     | 2021-01-14 06:28:52,363 | progress   |       Finished subset 45/528, 8.52 percent done
+INFO     | 2021-01-14 06:29:21,174 | progress   |       Finished subset 46/528, 8.71 percent done
+INFO     | 2021-01-14 06:30:15,986 | progress   |       Finished subset 47/528, 8.90 percent done
+INFO     | 2021-01-14 06:31:07,856 | progress   |       Finished subset 48/528, 9.09 percent done
+INFO     | 2021-01-14 06:31:57,515 | progress   |       Finished subset 49/528, 9.28 percent done
+INFO     | 2021-01-14 06:32:36,522 | progress   |       Finished subset 50/528, 9.47 percent done
+INFO     | 2021-01-14 06:33:36,679 | progress   |       Finished subset 51/528, 9.66 percent done
+INFO     | 2021-01-14 06:33:56,916 | progress   |       Finished subset 52/528, 9.85 percent done
+INFO     | 2021-01-14 06:34:40,623 | progress   |       Finished subset 53/528, 10.04 percent done
+INFO     | 2021-01-14 06:34:45,701 | progress   |       Finished subset 54/528, 10.23 percent done
+INFO     | 2021-01-14 06:35:09,159 | progress   |       Finished subset 55/528, 10.42 percent done
+INFO     | 2021-01-14 06:35:48,681 | progress   |       Finished subset 56/528, 10.61 percent done
+INFO     | 2021-01-14 06:36:04,477 | progress   |       Finished subset 57/528, 10.80 percent done
+INFO     | 2021-01-14 06:36:14,341 | progress   |       Finished subset 58/528, 10.98 percent done
+INFO     | 2021-01-14 06:36:29,680 | progress   |       Finished subset 59/528, 11.17 percent done
+INFO     | 2021-01-14 06:37:09,092 | progress   |       Finished subset 60/528, 11.36 percent done
+INFO     | 2021-01-14 06:37:40,112 | progress   |       Finished subset 61/528, 11.55 percent done
+INFO     | 2021-01-14 06:37:55,321 | progress   |       Finished subset 62/528, 11.74 percent done
+INFO     | 2021-01-14 06:38:24,542 | progress   |       Finished subset 63/528, 11.93 percent done
+INFO     | 2021-01-14 06:39:14,905 | progress   |       Finished subset 64/528, 12.12 percent done
+INFO     | 2021-01-14 06:39:26,271 | progress   |       Finished subset 65/528, 12.31 percent done
+INFO     | 2021-01-14 06:39:38,909 | progress   |       Finished subset 66/528, 12.50 percent done
+INFO     | 2021-01-14 06:39:58,572 | progress   |       Finished subset 67/528, 12.69 percent done
+INFO     | 2021-01-14 06:40:48,674 | progress   |       Finished subset 68/528, 12.88 percent done
+INFO     | 2021-01-14 06:41:30,155 | progress   |       Finished subset 69/528, 13.07 percent done
+INFO     | 2021-01-14 06:41:52,916 | progress   |       Finished subset 70/528, 13.26 percent done
+INFO     | 2021-01-14 06:42:42,469 | progress   |       Finished subset 71/528, 13.45 percent done
+INFO     | 2021-01-14 06:43:13,578 | progress   |       Finished subset 72/528, 13.64 percent done
+INFO     | 2021-01-14 06:43:16,676 | progress   |       Finished subset 73/528, 13.83 percent done
+INFO     | 2021-01-14 06:44:00,281 | progress   |       Finished subset 74/528, 14.02 percent done
+INFO     | 2021-01-14 06:44:10,533 | progress   |       Finished subset 75/528, 14.20 percent done
+INFO     | 2021-01-14 06:44:57,883 | progress   |       Finished subset 76/528, 14.39 percent done
+INFO     | 2021-01-14 06:45:16,226 | progress   |       Finished subset 77/528, 14.58 percent done
+INFO     | 2021-01-14 06:45:25,204 | progress   |       Finished subset 78/528, 14.77 percent done
+INFO     | 2021-01-14 06:45:51,259 | progress   |       Finished subset 79/528, 14.96 percent done
+INFO     | 2021-01-14 06:46:48,182 | progress   |       Finished subset 80/528, 15.15 percent done
+INFO     | 2021-01-14 06:46:50,933 | progress   |       Finished subset 81/528, 15.34 percent done
+INFO     | 2021-01-14 06:47:11,013 | progress   |       Finished subset 82/528, 15.53 percent done
+INFO     | 2021-01-14 06:48:03,801 | progress   |       Finished subset 83/528, 15.72 percent done
+INFO     | 2021-01-14 06:48:34,436 | progress   |       Finished subset 84/528, 15.91 percent done
+INFO     | 2021-01-14 06:48:45,667 | progress   |       Finished subset 85/528, 16.10 percent done
+INFO     | 2021-01-14 06:49:40,945 | progress   |       Finished subset 86/528, 16.29 percent done
+INFO     | 2021-01-14 06:50:22,575 | progress   |       Finished subset 87/528, 16.48 percent done
+INFO     | 2021-01-14 06:50:35,016 | progress   |       Finished subset 88/528, 16.67 percent done
+INFO     | 2021-01-14 06:50:47,872 | progress   |       Finished subset 89/528, 16.86 percent done
+INFO     | 2021-01-14 06:51:02,930 | progress   |       Finished subset 90/528, 17.05 percent done
+INFO     | 2021-01-14 06:51:49,724 | progress   |       Finished subset 91/528, 17.23 percent done
+INFO     | 2021-01-14 06:52:29,043 | progress   |       Finished subset 92/528, 17.42 percent done
+INFO     | 2021-01-14 06:53:03,881 | progress   |       Finished subset 93/528, 17.61 percent done
+INFO     | 2021-01-14 06:53:20,278 | progress   |       Finished subset 94/528, 17.80 percent done
+INFO     | 2021-01-14 06:53:45,508 | progress   |       Finished subset 95/528, 17.99 percent done
+INFO     | 2021-01-14 06:54:20,216 | progress   |       Finished subset 96/528, 18.18 percent done
+INFO     | 2021-01-14 06:55:18,980 | progress   |       Finished subset 97/528, 18.37 percent done
+INFO     | 2021-01-14 06:55:21,580 | progress   |       Finished subset 98/528, 18.56 percent done
+INFO     | 2021-01-14 06:56:06,821 | progress   |       Finished subset 99/528, 18.75 percent done
+INFO     | 2021-01-14 06:56:25,538 | progress   |       Finished subset 100/528, 18.94 percent done
+INFO     | 2021-01-14 06:56:59,947 | progress   |       Finished subset 101/528, 19.13 percent done
+INFO     | 2021-01-14 06:57:42,062 | progress   |       Finished subset 102/528, 19.32 percent done
+INFO     | 2021-01-14 06:57:48,874 | progress   |       Finished subset 103/528, 19.51 percent done
+INFO     | 2021-01-14 06:58:10,094 | progress   |       Finished subset 104/528, 19.70 percent done
+INFO     | 2021-01-14 06:58:25,464 | progress   |       Finished subset 105/528, 19.89 percent done
+INFO     | 2021-01-14 06:59:08,981 | progress   |       Finished subset 106/528, 20.08 percent done
+INFO     | 2021-01-14 06:59:10,037 | progress   |       Finished subset 107/528, 20.27 percent done
+INFO     | 2021-01-14 06:59:59,703 | progress   |       Finished subset 108/528, 20.45 percent done
+INFO     | 2021-01-14 07:00:27,299 | progress   |       Finished subset 109/528, 20.64 percent done
+INFO     | 2021-01-14 07:00:39,236 | progress   |       Finished subset 110/528, 20.83 percent done
+INFO     | 2021-01-14 07:00:55,152 | progress   |       Finished subset 111/528, 21.02 percent done
+INFO     | 2021-01-14 07:01:09,638 | progress   |       Finished subset 112/528, 21.21 percent done
+INFO     | 2021-01-14 07:01:44,544 | progress   |       Finished subset 113/528, 21.40 percent done
+INFO     | 2021-01-14 07:01:49,559 | progress   |       Finished subset 114/528, 21.59 percent done
+INFO     | 2021-01-14 07:02:31,309 | progress   |       Finished subset 115/528, 21.78 percent done
+INFO     | 2021-01-14 07:02:54,212 | progress   |       Finished subset 116/528, 21.97 percent done
+INFO     | 2021-01-14 07:03:07,202 | progress   |       Finished subset 117/528, 22.16 percent done
+INFO     | 2021-01-14 07:03:27,100 | progress   |       Finished subset 118/528, 22.35 percent done
+INFO     | 2021-01-14 07:04:08,560 | progress   |       Finished subset 119/528, 22.54 percent done
+INFO     | 2021-01-14 07:04:22,593 | progress   |       Finished subset 120/528, 22.73 percent done
+INFO     | 2021-01-14 07:05:10,197 | progress   |       Finished subset 121/528, 22.92 percent done
+INFO     | 2021-01-14 07:05:20,005 | progress   |       Finished subset 122/528, 23.11 percent done
+INFO     | 2021-01-14 07:06:13,483 | progress   |       Finished subset 123/528, 23.30 percent done
+INFO     | 2021-01-14 07:07:08,306 | progress   |       Finished subset 124/528, 23.48 percent done
+INFO     | 2021-01-14 07:07:20,018 | progress   |       Finished subset 125/528, 23.67 percent done
+INFO     | 2021-01-14 07:07:56,528 | progress   |       Finished subset 126/528, 23.86 percent done
+INFO     | 2021-01-14 07:08:12,544 | progress   |       Finished subset 127/528, 24.05 percent done
+INFO     | 2021-01-14 07:08:35,560 | progress   |       Finished subset 128/528, 24.24 percent done
+INFO     | 2021-01-14 07:09:32,901 | progress   |       Finished subset 129/528, 24.43 percent done
+INFO     | 2021-01-14 07:09:51,387 | progress   |       Finished subset 130/528, 24.62 percent done
+INFO     | 2021-01-14 07:10:33,786 | progress   |       Finished subset 131/528, 24.81 percent done
+INFO     | 2021-01-14 07:10:45,135 | progress   |       Finished subset 132/528, 25.00 percent done
+INFO     | 2021-01-14 07:11:28,346 | progress   |       Finished subset 133/528, 25.19 percent done
+INFO     | 2021-01-14 07:12:10,962 | progress   |       Finished subset 134/528, 25.38 percent done
+INFO     | 2021-01-14 07:12:46,061 | progress   |       Finished subset 135/528, 25.57 percent done
+INFO     | 2021-01-14 07:13:09,735 | progress   |       Finished subset 136/528, 25.76 percent done
+INFO     | 2021-01-14 07:13:54,586 | progress   |       Finished subset 137/528, 25.95 percent done
+INFO     | 2021-01-14 07:14:29,862 | progress   |       Finished subset 138/528, 26.14 percent done
+INFO     | 2021-01-14 07:14:42,594 | progress   |       Finished subset 139/528, 26.33 percent done
+INFO     | 2021-01-14 07:14:57,819 | progress   |       Finished subset 140/528, 26.52 percent done
+INFO     | 2021-01-14 07:15:09,560 | progress   |       Finished subset 141/528, 26.70 percent done
+INFO     | 2021-01-14 07:15:23,554 | progress   |       Finished subset 142/528, 26.89 percent done
+INFO     | 2021-01-14 07:15:35,846 | progress   |       Finished subset 143/528, 27.08 percent done
+INFO     | 2021-01-14 07:15:49,132 | progress   |       Finished subset 144/528, 27.27 percent done
+INFO     | 2021-01-14 07:16:00,582 | progress   |       Finished subset 145/528, 27.46 percent done
+INFO     | 2021-01-14 07:16:13,384 | progress   |       Finished subset 146/528, 27.65 percent done
+INFO     | 2021-01-14 07:17:00,095 | progress   |       Finished subset 147/528, 27.84 percent done
+INFO     | 2021-01-14 07:17:12,096 | progress   |       Finished subset 148/528, 28.03 percent done
+INFO     | 2021-01-14 07:17:24,390 | progress   |       Finished subset 149/528, 28.22 percent done
+INFO     | 2021-01-14 07:17:51,377 | progress   |       Finished subset 150/528, 28.41 percent done
+INFO     | 2021-01-14 07:18:15,102 | progress   |       Finished subset 151/528, 28.60 percent done
+INFO     | 2021-01-14 07:18:29,680 | progress   |       Finished subset 152/528, 28.79 percent done
+INFO     | 2021-01-14 07:19:07,725 | progress   |       Finished subset 153/528, 28.98 percent done
+INFO     | 2021-01-14 07:19:25,655 | progress   |       Finished subset 154/528, 29.17 percent done
+INFO     | 2021-01-14 07:20:13,325 | progress   |       Finished subset 155/528, 29.36 percent done
+INFO     | 2021-01-14 07:20:34,184 | progress   |       Finished subset 156/528, 29.55 percent done
+INFO     | 2021-01-14 07:21:15,366 | progress   |       Finished subset 157/528, 29.73 percent done
+INFO     | 2021-01-14 07:21:34,791 | progress   |       Finished subset 158/528, 29.92 percent done
+INFO     | 2021-01-14 07:21:52,663 | progress   |       Finished subset 159/528, 30.11 percent done
+INFO     | 2021-01-14 07:22:11,512 | progress   |       Finished subset 160/528, 30.30 percent done
+INFO     | 2021-01-14 07:22:31,124 | progress   |       Finished subset 161/528, 30.49 percent done
+INFO     | 2021-01-14 07:23:13,159 | progress   |       Finished subset 162/528, 30.68 percent done
+INFO     | 2021-01-14 07:23:30,641 | progress   |       Finished subset 163/528, 30.87 percent done
+INFO     | 2021-01-14 07:23:51,511 | progress   |       Finished subset 164/528, 31.06 percent done
+INFO     | 2021-01-14 07:24:29,521 | progress   |       Finished subset 165/528, 31.25 percent done
+INFO     | 2021-01-14 07:24:51,538 | progress   |       Finished subset 166/528, 31.44 percent done
+INFO     | 2021-01-14 07:25:42,002 | progress   |       Finished subset 167/528, 31.63 percent done
+INFO     | 2021-01-14 07:26:01,569 | progress   |       Finished subset 168/528, 31.82 percent done
+INFO     | 2021-01-14 07:26:27,460 | progress   |       Finished subset 169/528, 32.01 percent done
+INFO     | 2021-01-14 07:27:04,052 | progress   |       Finished subset 170/528, 32.20 percent done
+INFO     | 2021-01-14 07:27:13,812 | progress   |       Finished subset 171/528, 32.39 percent done
+INFO     | 2021-01-14 07:27:35,958 | progress   |       Finished subset 172/528, 32.58 percent done
+INFO     | 2021-01-14 07:27:59,474 | progress   |       Finished subset 173/528, 32.77 percent done
+INFO     | 2021-01-14 07:28:37,832 | progress   |       Finished subset 174/528, 32.95 percent done
+INFO     | 2021-01-14 07:29:08,307 | progress   |       Finished subset 175/528, 33.14 percent done
+INFO     | 2021-01-14 07:29:45,131 | progress   |       Finished subset 176/528, 33.33 percent done
+INFO     | 2021-01-14 07:30:03,939 | progress   |       Finished subset 177/528, 33.52 percent done
+INFO     | 2021-01-14 07:30:36,303 | progress   |       Finished subset 178/528, 33.71 percent done
+INFO     | 2021-01-14 07:31:24,115 | progress   |       Finished subset 179/528, 33.90 percent done
+INFO     | 2021-01-14 07:31:53,027 | progress   |       Finished subset 180/528, 34.09 percent done
+INFO     | 2021-01-14 07:32:36,749 | progress   |       Finished subset 181/528, 34.28 percent done
+INFO     | 2021-01-14 07:32:48,868 | progress   |       Finished subset 182/528, 34.47 percent done
+INFO     | 2021-01-14 07:33:03,739 | progress   |       Finished subset 183/528, 34.66 percent done
+INFO     | 2021-01-14 07:33:48,013 | progress   |       Finished subset 184/528, 34.85 percent done
+INFO     | 2021-01-14 07:34:26,829 | progress   |       Finished subset 185/528, 35.04 percent done
+INFO     | 2021-01-14 07:34:52,587 | progress   |       Finished subset 186/528, 35.23 percent done
+INFO     | 2021-01-14 07:35:39,113 | progress   |       Finished subset 187/528, 35.42 percent done
+INFO     | 2021-01-14 07:36:23,345 | progress   |       Finished subset 188/528, 35.61 percent done
+INFO     | 2021-01-14 07:36:56,200 | progress   |       Finished subset 189/528, 35.80 percent done
+INFO     | 2021-01-14 07:37:45,569 | progress   |       Finished subset 190/528, 35.98 percent done
+INFO     | 2021-01-14 07:38:20,975 | progress   |       Finished subset 191/528, 36.17 percent done
+INFO     | 2021-01-14 07:39:14,440 | progress   |       Finished subset 192/528, 36.36 percent done
+INFO     | 2021-01-14 07:39:24,769 | progress   |       Finished subset 193/528, 36.55 percent done
+INFO     | 2021-01-14 07:39:36,417 | progress   |       Finished subset 194/528, 36.74 percent done
+INFO     | 2021-01-14 07:39:44,859 | progress   |       Finished subset 195/528, 36.93 percent done
+INFO     | 2021-01-14 07:40:24,253 | progress   |       Finished subset 196/528, 37.12 percent done
+INFO     | 2021-01-14 07:40:44,406 | progress   |       Finished subset 197/528, 37.31 percent done
+INFO     | 2021-01-14 07:41:18,808 | progress   |       Finished subset 198/528, 37.50 percent done
+INFO     | 2021-01-14 07:41:32,698 | progress   |       Finished subset 199/528, 37.69 percent done
+INFO     | 2021-01-14 07:41:58,349 | progress   |       Finished subset 200/528, 37.88 percent done
+INFO     | 2021-01-14 07:42:38,921 | progress   |       Finished subset 201/528, 38.07 percent done
+INFO     | 2021-01-14 07:43:21,691 | progress   |       Finished subset 202/528, 38.26 percent done
+INFO     | 2021-01-14 07:43:28,955 | progress   |       Finished subset 203/528, 38.45 percent done
+INFO     | 2021-01-14 07:43:59,199 | progress   |       Finished subset 204/528, 38.64 percent done
+INFO     | 2021-01-14 07:44:22,591 | progress   |       Finished subset 205/528, 38.83 percent done
+INFO     | 2021-01-14 07:44:33,212 | progress   |       Finished subset 206/528, 39.02 percent done
+INFO     | 2021-01-14 07:44:51,885 | progress   |       Finished subset 207/528, 39.20 percent done
+INFO     | 2021-01-14 07:45:27,095 | progress   |       Finished subset 208/528, 39.39 percent done
+INFO     | 2021-01-14 07:45:28,086 | progress   |       Finished subset 209/528, 39.58 percent done
+INFO     | 2021-01-14 07:45:40,807 | progress   |       Finished subset 210/528, 39.77 percent done
+INFO     | 2021-01-14 07:46:01,783 | progress   |       Finished subset 211/528, 39.96 percent done
+INFO     | 2021-01-14 07:46:21,671 | progress   |       Finished subset 212/528, 40.15 percent done
+INFO     | 2021-01-14 07:46:26,234 | progress   |       Finished subset 213/528, 40.34 percent done
+INFO     | 2021-01-14 07:47:14,402 | progress   |       Finished subset 214/528, 40.53 percent done
+INFO     | 2021-01-14 07:47:43,063 | progress   |       Finished subset 215/528, 40.72 percent done
+INFO     | 2021-01-14 07:48:16,713 | progress   |       Finished subset 216/528, 40.91 percent done
+INFO     | 2021-01-14 07:48:33,999 | progress   |       Finished subset 217/528, 41.10 percent done
+INFO     | 2021-01-14 07:48:44,347 | progress   |       Finished subset 218/528, 41.29 percent done
+INFO     | 2021-01-14 07:49:13,193 | progress   |       Finished subset 219/528, 41.48 percent done
+INFO     | 2021-01-14 07:49:20,395 | progress   |       Finished subset 220/528, 41.67 percent done
+INFO     | 2021-01-14 07:50:08,775 | progress   |       Finished subset 221/528, 41.86 percent done
+INFO     | 2021-01-14 07:50:52,092 | progress   |       Finished subset 222/528, 42.05 percent done
+INFO     | 2021-01-14 07:51:07,054 | progress   |       Finished subset 223/528, 42.23 percent done
+INFO     | 2021-01-14 07:51:15,901 | progress   |       Finished subset 224/528, 42.42 percent done
+INFO     | 2021-01-14 07:51:33,280 | progress   |       Finished subset 225/528, 42.61 percent done
+INFO     | 2021-01-14 07:51:57,296 | progress   |       Finished subset 226/528, 42.80 percent done
+INFO     | 2021-01-14 07:52:00,328 | progress   |       Finished subset 227/528, 42.99 percent done
+INFO     | 2021-01-14 07:52:16,718 | progress   |       Finished subset 228/528, 43.18 percent done
+INFO     | 2021-01-14 07:52:44,231 | progress   |       Finished subset 229/528, 43.37 percent done
+INFO     | 2021-01-14 07:53:10,933 | progress   |       Finished subset 230/528, 43.56 percent done
+INFO     | 2021-01-14 07:53:20,250 | progress   |       Finished subset 231/528, 43.75 percent done
+INFO     | 2021-01-14 07:53:34,532 | progress   |       Finished subset 232/528, 43.94 percent done
+INFO     | 2021-01-14 07:53:51,314 | progress   |       Finished subset 233/528, 44.13 percent done
+INFO     | 2021-01-14 07:54:03,499 | progress   |       Finished subset 234/528, 44.32 percent done
+INFO     | 2021-01-14 07:54:33,257 | progress   |       Finished subset 235/528, 44.51 percent done
+INFO     | 2021-01-14 07:55:11,327 | progress   |       Finished subset 236/528, 44.70 percent done
+INFO     | 2021-01-14 07:55:38,921 | progress   |       Finished subset 237/528, 44.89 percent done
+INFO     | 2021-01-14 07:56:11,700 | progress   |       Finished subset 238/528, 45.08 percent done
+INFO     | 2021-01-14 07:56:50,270 | progress   |       Finished subset 239/528, 45.27 percent done
+INFO     | 2021-01-14 07:57:20,028 | progress   |       Finished subset 240/528, 45.45 percent done
+INFO     | 2021-01-14 07:57:38,254 | progress   |       Finished subset 241/528, 45.64 percent done
+INFO     | 2021-01-14 07:58:20,622 | progress   |       Finished subset 242/528, 45.83 percent done
+INFO     | 2021-01-14 07:58:55,241 | progress   |       Finished subset 243/528, 46.02 percent done
+INFO     | 2021-01-14 07:58:57,904 | progress   |       Finished subset 244/528, 46.21 percent done
+INFO     | 2021-01-14 07:59:14,018 | progress   |       Finished subset 245/528, 46.40 percent done
+INFO     | 2021-01-14 07:59:23,772 | progress   |       Finished subset 246/528, 46.59 percent done
+INFO     | 2021-01-14 07:59:36,555 | progress   |       Finished subset 247/528, 46.78 percent done
+INFO     | 2021-01-14 07:59:46,597 | progress   |       Finished subset 248/528, 46.97 percent done
+INFO     | 2021-01-14 07:59:57,327 | progress   |       Finished subset 249/528, 47.16 percent done
+INFO     | 2021-01-14 08:00:11,716 | progress   |       Finished subset 250/528, 47.35 percent done
+INFO     | 2021-01-14 08:00:23,851 | progress   |       Finished subset 251/528, 47.54 percent done
+INFO     | 2021-01-14 08:00:37,396 | progress   |       Finished subset 252/528, 47.73 percent done
+INFO     | 2021-01-14 08:00:54,946 | progress   |       Finished subset 253/528, 47.92 percent done
+INFO     | 2021-01-14 08:01:08,545 | progress   |       Finished subset 254/528, 48.11 percent done
+INFO     | 2021-01-14 08:01:22,157 | progress   |       Finished subset 255/528, 48.30 percent done
+INFO     | 2021-01-14 08:01:32,401 | progress   |       Finished subset 256/528, 48.48 percent done
+INFO     | 2021-01-14 08:02:10,771 | progress   |       Finished subset 257/528, 48.67 percent done
+INFO     | 2021-01-14 08:02:29,941 | progress   |       Finished subset 258/528, 48.86 percent done
+INFO     | 2021-01-14 08:02:40,643 | progress   |       Finished subset 259/528, 49.05 percent done
+INFO     | 2021-01-14 08:02:56,391 | progress   |       Finished subset 260/528, 49.24 percent done
+INFO     | 2021-01-14 08:03:10,316 | progress   |       Finished subset 261/528, 49.43 percent done
+INFO     | 2021-01-14 08:03:37,619 | progress   |       Finished subset 262/528, 49.62 percent done
+INFO     | 2021-01-14 08:04:00,587 | progress   |       Finished subset 263/528, 49.81 percent done
+INFO     | 2021-01-14 08:04:22,518 | progress   |       Finished subset 264/528, 50.00 percent done
+INFO     | 2021-01-14 08:04:46,732 | progress   |       Finished subset 265/528, 50.19 percent done
+INFO     | 2021-01-14 08:05:06,989 | progress   |       Finished subset 266/528, 50.38 percent done
+INFO     | 2021-01-14 08:05:38,235 | progress   |       Finished subset 267/528, 50.57 percent done
+INFO     | 2021-01-14 08:05:57,940 | progress   |       Finished subset 268/528, 50.76 percent done
+INFO     | 2021-01-14 08:06:20,104 | progress   |       Finished subset 269/528, 50.95 percent done
+INFO     | 2021-01-14 08:06:48,441 | progress   |       Finished subset 270/528, 51.14 percent done
+INFO     | 2021-01-14 08:07:20,365 | progress   |       Finished subset 271/528, 51.33 percent done
+INFO     | 2021-01-14 08:07:57,887 | progress   |       Finished subset 272/528, 51.52 percent done
+INFO     | 2021-01-14 08:08:21,324 | progress   |       Finished subset 273/528, 51.70 percent done
+INFO     | 2021-01-14 08:08:48,760 | progress   |       Finished subset 274/528, 51.89 percent done
+INFO     | 2021-01-14 08:09:14,263 | progress   |       Finished subset 275/528, 52.08 percent done
+INFO     | 2021-01-14 08:09:40,175 | progress   |       Finished subset 276/528, 52.27 percent done
+INFO     | 2021-01-14 08:10:03,319 | progress   |       Finished subset 277/528, 52.46 percent done
+INFO     | 2021-01-14 08:10:46,015 | progress   |       Finished subset 278/528, 52.65 percent done
+INFO     | 2021-01-14 08:11:13,026 | progress   |       Finished subset 279/528, 52.84 percent done
+INFO     | 2021-01-14 08:11:31,204 | progress   |       Finished subset 280/528, 53.03 percent done
+INFO     | 2021-01-14 08:12:04,111 | progress   |       Finished subset 281/528, 53.22 percent done
+INFO     | 2021-01-14 08:12:23,498 | progress   |       Finished subset 282/528, 53.41 percent done
+INFO     | 2021-01-14 08:12:34,036 | progress   |       Finished subset 283/528, 53.60 percent done
+INFO     | 2021-01-14 08:13:07,172 | progress   |       Finished subset 284/528, 53.79 percent done
+INFO     | 2021-01-14 08:13:21,857 | progress   |       Finished subset 285/528, 53.98 percent done
+INFO     | 2021-01-14 08:13:40,619 | progress   |       Finished subset 286/528, 54.17 percent done
+INFO     | 2021-01-14 08:13:59,134 | progress   |       Finished subset 287/528, 54.36 percent done
+INFO     | 2021-01-14 08:14:22,365 | progress   |       Finished subset 288/528, 54.55 percent done
+INFO     | 2021-01-14 08:14:45,444 | progress   |       Finished subset 289/528, 54.73 percent done
+INFO     | 2021-01-14 08:15:02,453 | progress   |       Finished subset 290/528, 54.92 percent done
+INFO     | 2021-01-14 08:15:15,620 | progress   |       Finished subset 291/528, 55.11 percent done
+INFO     | 2021-01-14 08:15:27,695 | progress   |       Finished subset 292/528, 55.30 percent done
+INFO     | 2021-01-14 08:15:39,354 | progress   |       Finished subset 293/528, 55.49 percent done
+INFO     | 2021-01-14 08:16:07,740 | progress   |       Finished subset 294/528, 55.68 percent done
+INFO     | 2021-01-14 08:16:21,337 | progress   |       Finished subset 295/528, 55.87 percent done
+INFO     | 2021-01-14 08:16:46,083 | progress   |       Finished subset 296/528, 56.06 percent done
+INFO     | 2021-01-14 08:16:58,223 | progress   |       Finished subset 297/528, 56.25 percent done
+INFO     | 2021-01-14 08:17:26,446 | progress   |       Finished subset 298/528, 56.44 percent done
+INFO     | 2021-01-14 08:17:33,190 | progress   |       Finished subset 299/528, 56.63 percent done
+INFO     | 2021-01-14 08:17:49,788 | progress   |       Finished subset 300/528, 56.82 percent done
+INFO     | 2021-01-14 08:18:09,242 | progress   |       Finished subset 301/528, 57.01 percent done
+INFO     | 2021-01-14 08:18:40,637 | progress   |       Finished subset 302/528, 57.20 percent done
+INFO     | 2021-01-14 08:18:47,591 | progress   |       Finished subset 303/528, 57.39 percent done
+INFO     | 2021-01-14 08:19:01,962 | progress   |       Finished subset 304/528, 57.58 percent done
+INFO     | 2021-01-14 08:19:12,932 | progress   |       Finished subset 305/528, 57.77 percent done
+INFO     | 2021-01-14 08:19:30,146 | progress   |       Finished subset 306/528, 57.95 percent done
+INFO     | 2021-01-14 08:19:53,502 | progress   |       Finished subset 307/528, 58.14 percent done
+INFO     | 2021-01-14 08:19:59,777 | progress   |       Finished subset 308/528, 58.33 percent done
+INFO     | 2021-01-14 08:20:26,217 | progress   |       Finished subset 309/528, 58.52 percent done
+INFO     | 2021-01-14 08:20:45,707 | progress   |       Finished subset 310/528, 58.71 percent done
+INFO     | 2021-01-14 08:21:08,249 | progress   |       Finished subset 311/528, 58.90 percent done
+INFO     | 2021-01-14 08:21:31,846 | progress   |       Finished subset 312/528, 59.09 percent done
+INFO     | 2021-01-14 08:21:38,764 | progress   |       Finished subset 313/528, 59.28 percent done
+INFO     | 2021-01-14 08:21:49,862 | progress   |       Finished subset 314/528, 59.47 percent done
+INFO     | 2021-01-14 08:22:00,731 | progress   |       Finished subset 315/528, 59.66 percent done
+INFO     | 2021-01-14 08:22:23,373 | progress   |       Finished subset 316/528, 59.85 percent done
+INFO     | 2021-01-14 08:22:24,738 | progress   |       Finished subset 317/528, 60.04 percent done
+INFO     | 2021-01-14 08:22:32,644 | progress   |       Finished subset 318/528, 60.23 percent done
+INFO     | 2021-01-14 08:22:52,702 | progress   |       Finished subset 319/528, 60.42 percent done
+INFO     | 2021-01-14 08:23:13,369 | progress   |       Finished subset 320/528, 60.61 percent done
+INFO     | 2021-01-14 08:23:18,912 | progress   |       Finished subset 321/528, 60.80 percent done
+INFO     | 2021-01-14 08:23:50,930 | progress   |       Finished subset 322/528, 60.98 percent done
+INFO     | 2021-01-14 08:24:13,723 | progress   |       Finished subset 323/528, 61.17 percent done
+INFO     | 2021-01-14 08:24:21,852 | progress   |       Finished subset 324/528, 61.36 percent done
+INFO     | 2021-01-14 08:24:50,922 | progress   |       Finished subset 325/528, 61.55 percent done
+INFO     | 2021-01-14 08:25:09,949 | progress   |       Finished subset 326/528, 61.74 percent done
+INFO     | 2021-01-14 08:25:24,865 | progress   |       Finished subset 327/528, 61.93 percent done
+INFO     | 2021-01-14 08:25:32,628 | progress   |       Finished subset 328/528, 62.12 percent done
+INFO     | 2021-01-14 08:25:59,217 | progress   |       Finished subset 329/528, 62.31 percent done
+INFO     | 2021-01-14 08:26:26,677 | progress   |       Finished subset 330/528, 62.50 percent done
+INFO     | 2021-01-14 08:26:35,414 | progress   |       Finished subset 331/528, 62.69 percent done
+INFO     | 2021-01-14 08:26:58,461 | progress   |       Finished subset 332/528, 62.88 percent done
+INFO     | 2021-01-14 08:27:21,173 | progress   |       Finished subset 333/528, 63.07 percent done
+INFO     | 2021-01-14 08:27:32,876 | progress   |       Finished subset 334/528, 63.26 percent done
+INFO     | 2021-01-14 08:27:49,923 | progress   |       Finished subset 335/528, 63.45 percent done
+INFO     | 2021-01-14 08:27:54,398 | progress   |       Finished subset 336/528, 63.64 percent done
+INFO     | 2021-01-14 08:28:01,815 | progress   |       Finished subset 337/528, 63.83 percent done
+INFO     | 2021-01-14 08:28:10,139 | progress   |       Finished subset 338/528, 64.02 percent done
+INFO     | 2021-01-14 08:28:18,272 | progress   |       Finished subset 339/528, 64.20 percent done
+INFO     | 2021-01-14 08:28:25,265 | progress   |       Finished subset 340/528, 64.39 percent done
+INFO     | 2021-01-14 08:28:36,322 | progress   |       Finished subset 341/528, 64.58 percent done
+INFO     | 2021-01-14 08:28:53,924 | progress   |       Finished subset 342/528, 64.77 percent done
+INFO     | 2021-01-14 08:29:00,586 | progress   |       Finished subset 343/528, 64.96 percent done
+INFO     | 2021-01-14 08:29:07,672 | progress   |       Finished subset 344/528, 65.15 percent done
+INFO     | 2021-01-14 08:29:14,866 | progress   |       Finished subset 345/528, 65.34 percent done
+INFO     | 2021-01-14 08:29:44,375 | progress   |       Finished subset 346/528, 65.53 percent done
+INFO     | 2021-01-14 08:29:51,161 | progress   |       Finished subset 347/528, 65.72 percent done
+INFO     | 2021-01-14 08:29:52,555 | progress   |       Finished subset 348/528, 65.91 percent done
+INFO     | 2021-01-14 08:30:13,185 | progress   |       Finished subset 349/528, 66.10 percent done
+INFO     | 2021-01-14 08:30:32,659 | progress   |       Finished subset 350/528, 66.29 percent done
+INFO     | 2021-01-14 08:30:52,955 | progress   |       Finished subset 351/528, 66.48 percent done
+INFO     | 2021-01-14 08:31:09,846 | progress   |       Finished subset 352/528, 66.67 percent done
+INFO     | 2021-01-14 08:31:26,365 | progress   |       Finished subset 353/528, 66.86 percent done
+INFO     | 2021-01-14 08:31:38,490 | progress   |       Finished subset 354/528, 67.05 percent done
+INFO     | 2021-01-14 08:31:54,978 | progress   |       Finished subset 355/528, 67.23 percent done
+INFO     | 2021-01-14 08:32:24,157 | progress   |       Finished subset 356/528, 67.42 percent done
+INFO     | 2021-01-14 08:32:29,303 | progress   |       Finished subset 357/528, 67.61 percent done
+INFO     | 2021-01-14 08:33:00,592 | progress   |       Finished subset 358/528, 67.80 percent done
+INFO     | 2021-01-14 08:33:11,573 | progress   |       Finished subset 359/528, 67.99 percent done
+INFO     | 2021-01-14 08:33:21,610 | progress   |       Finished subset 360/528, 68.18 percent done
+INFO     | 2021-01-14 08:33:35,822 | progress   |       Finished subset 361/528, 68.37 percent done
+INFO     | 2021-01-14 08:34:03,337 | progress   |       Finished subset 362/528, 68.56 percent done
+INFO     | 2021-01-14 08:34:31,446 | progress   |       Finished subset 363/528, 68.75 percent done
+INFO     | 2021-01-14 08:35:01,791 | progress   |       Finished subset 364/528, 68.94 percent done
+INFO     | 2021-01-14 08:35:21,195 | progress   |       Finished subset 365/528, 69.13 percent done
+INFO     | 2021-01-14 08:35:28,704 | progress   |       Finished subset 366/528, 69.32 percent done
+INFO     | 2021-01-14 08:35:42,830 | progress   |       Finished subset 367/528, 69.51 percent done
+INFO     | 2021-01-14 08:35:46,199 | progress   |       Finished subset 368/528, 69.70 percent done
+INFO     | 2021-01-14 08:36:14,062 | progress   |       Finished subset 369/528, 69.89 percent done
+INFO     | 2021-01-14 08:36:37,516 | progress   |       Finished subset 370/528, 70.08 percent done
+INFO     | 2021-01-14 08:36:57,509 | progress   |       Finished subset 371/528, 70.27 percent done
+INFO     | 2021-01-14 08:37:12,407 | progress   |       Finished subset 372/528, 70.45 percent done
+INFO     | 2021-01-14 08:37:19,919 | progress   |       Finished subset 373/528, 70.64 percent done
+INFO     | 2021-01-14 08:37:29,560 | progress   |       Finished subset 374/528, 70.83 percent done
+INFO     | 2021-01-14 08:37:39,804 | progress   |       Finished subset 375/528, 71.02 percent done
+INFO     | 2021-01-14 08:38:18,326 | progress   |       Finished subset 376/528, 71.21 percent done
+INFO     | 2021-01-14 08:38:51,897 | progress   |       Finished subset 377/528, 71.40 percent done
+INFO     | 2021-01-14 08:39:24,293 | progress   |       Finished subset 378/528, 71.59 percent done
+INFO     | 2021-01-14 08:39:35,621 | progress   |       Finished subset 379/528, 71.78 percent done
+INFO     | 2021-01-14 08:39:56,152 | progress   |       Finished subset 380/528, 71.97 percent done
+INFO     | 2021-01-14 08:40:04,037 | progress   |       Finished subset 381/528, 72.16 percent done
+INFO     | 2021-01-14 08:40:08,128 | progress   |       Finished subset 382/528, 72.35 percent done
+INFO     | 2021-01-14 08:40:40,687 | progress   |       Finished subset 383/528, 72.54 percent done
+INFO     | 2021-01-14 08:40:40,884 | progress   |       Finished subset 384/528, 72.73 percent done
+INFO     | 2021-01-14 08:41:04,861 | progress   |       Finished subset 385/528, 72.92 percent done
+INFO     | 2021-01-14 08:41:07,017 | progress   |       Finished subset 386/528, 73.11 percent done
+INFO     | 2021-01-14 08:41:20,633 | progress   |       Finished subset 387/528, 73.30 percent done
+INFO     | 2021-01-14 08:41:41,330 | progress   |       Finished subset 388/528, 73.48 percent done
+INFO     | 2021-01-14 08:42:01,761 | progress   |       Finished subset 389/528, 73.67 percent done
+INFO     | 2021-01-14 08:42:27,299 | progress   |       Finished subset 390/528, 73.86 percent done
+INFO     | 2021-01-14 08:42:43,550 | progress   |       Finished subset 391/528, 74.05 percent done
+INFO     | 2021-01-14 08:43:07,427 | progress   |       Finished subset 392/528, 74.24 percent done
+INFO     | 2021-01-14 08:43:32,735 | progress   |       Finished subset 393/528, 74.43 percent done
+INFO     | 2021-01-14 08:43:47,147 | progress   |       Finished subset 394/528, 74.62 percent done
+INFO     | 2021-01-14 08:44:09,247 | progress   |       Finished subset 395/528, 74.81 percent done
+INFO     | 2021-01-14 08:44:50,343 | progress   |       Finished subset 396/528, 75.00 percent done
+INFO     | 2021-01-14 08:44:54,442 | progress   |       Finished subset 397/528, 75.19 percent done
+INFO     | 2021-01-14 08:45:02,976 | progress   |       Finished subset 398/528, 75.38 percent done
+INFO     | 2021-01-14 08:45:13,425 | progress   |       Finished subset 399/528, 75.57 percent done
+INFO     | 2021-01-14 08:45:31,119 | progress   |       Finished subset 400/528, 75.76 percent done
+INFO     | 2021-01-14 08:45:57,252 | progress   |       Finished subset 401/528, 75.95 percent done
+INFO     | 2021-01-14 08:46:12,697 | progress   |       Finished subset 402/528, 76.14 percent done
+INFO     | 2021-01-14 08:46:35,627 | progress   |       Finished subset 403/528, 76.33 percent done
+INFO     | 2021-01-14 08:46:52,177 | progress   |       Finished subset 404/528, 76.52 percent done
+INFO     | 2021-01-14 08:47:03,794 | progress   |       Finished subset 405/528, 76.70 percent done
+INFO     | 2021-01-14 08:47:20,033 | progress   |       Finished subset 406/528, 76.89 percent done
+INFO     | 2021-01-14 08:47:44,654 | progress   |       Finished subset 407/528, 77.08 percent done
+INFO     | 2021-01-14 08:48:14,213 | progress   |       Finished subset 408/528, 77.27 percent done
+INFO     | 2021-01-14 08:48:18,759 | progress   |       Finished subset 409/528, 77.46 percent done
+INFO     | 2021-01-14 08:48:23,833 | progress   |       Finished subset 410/528, 77.65 percent done
+INFO     | 2021-01-14 08:48:30,829 | progress   |       Finished subset 411/528, 77.84 percent done
+INFO     | 2021-01-14 08:48:42,441 | progress   |       Finished subset 412/528, 78.03 percent done
+INFO     | 2021-01-14 08:49:05,270 | progress   |       Finished subset 413/528, 78.22 percent done
+INFO     | 2021-01-14 08:49:06,885 | progress   |       Finished subset 414/528, 78.41 percent done
+INFO     | 2021-01-14 08:49:13,003 | progress   |       Finished subset 415/528, 78.60 percent done
+INFO     | 2021-01-14 08:49:17,521 | progress   |       Finished subset 416/528, 78.79 percent done
+INFO     | 2021-01-14 08:49:49,602 | progress   |       Finished subset 417/528, 78.98 percent done
+INFO     | 2021-01-14 08:49:56,351 | progress   |       Finished subset 418/528, 79.17 percent done
+INFO     | 2021-01-14 08:50:10,071 | progress   |       Finished subset 419/528, 79.36 percent done
+INFO     | 2021-01-14 08:50:29,283 | progress   |       Finished subset 420/528, 79.55 percent done
+INFO     | 2021-01-14 08:50:49,011 | progress   |       Finished subset 421/528, 79.73 percent done
+INFO     | 2021-01-14 08:51:44,010 | progress   |       Finished subset 422/528, 79.92 percent done
+INFO     | 2021-01-14 08:52:01,033 | progress   |       Finished subset 423/528, 80.11 percent done
+INFO     | 2021-01-14 08:52:13,081 | progress   |       Finished subset 424/528, 80.30 percent done
+INFO     | 2021-01-14 08:52:23,325 | progress   |       Finished subset 425/528, 80.49 percent done
+INFO     | 2021-01-14 08:52:38,023 | progress   |       Finished subset 426/528, 80.68 percent done
+INFO     | 2021-01-14 08:52:44,824 | progress   |       Finished subset 427/528, 80.87 percent done
+INFO     | 2021-01-14 08:53:04,791 | progress   |       Finished subset 428/528, 81.06 percent done
+INFO     | 2021-01-14 08:53:24,916 | progress   |       Finished subset 429/528, 81.25 percent done
+INFO     | 2021-01-14 08:53:43,916 | progress   |       Finished subset 430/528, 81.44 percent done
+INFO     | 2021-01-14 08:54:06,001 | progress   |       Finished subset 431/528, 81.63 percent done
+INFO     | 2021-01-14 08:54:27,004 | progress   |       Finished subset 432/528, 81.82 percent done
+INFO     | 2021-01-14 08:54:35,926 | progress   |       Finished subset 433/528, 82.01 percent done
+INFO     | 2021-01-14 08:54:56,363 | progress   |       Finished subset 434/528, 82.20 percent done
+INFO     | 2021-01-14 08:55:25,130 | progress   |       Finished subset 435/528, 82.39 percent done
+INFO     | 2021-01-14 08:55:28,613 | progress   |       Finished subset 436/528, 82.58 percent done
+INFO     | 2021-01-14 08:55:51,878 | progress   |       Finished subset 437/528, 82.77 percent done
+INFO     | 2021-01-14 08:56:09,296 | progress   |       Finished subset 438/528, 82.95 percent done
+INFO     | 2021-01-14 08:56:17,855 | progress   |       Finished subset 439/528, 83.14 percent done
+INFO     | 2021-01-14 08:56:32,146 | progress   |       Finished subset 440/528, 83.33 percent done
+INFO     | 2021-01-14 08:56:48,327 | progress   |       Finished subset 441/528, 83.52 percent done
+INFO     | 2021-01-14 08:57:06,927 | progress   |       Finished subset 442/528, 83.71 percent done
+INFO     | 2021-01-14 08:57:28,804 | progress   |       Finished subset 443/528, 83.90 percent done
+INFO     | 2021-01-14 08:57:40,647 | progress   |       Finished subset 444/528, 84.09 percent done
+INFO     | 2021-01-14 08:58:01,653 | progress   |       Finished subset 445/528, 84.28 percent done
+INFO     | 2021-01-14 08:58:23,834 | progress   |       Finished subset 446/528, 84.47 percent done
+INFO     | 2021-01-14 08:58:38,099 | progress   |       Finished subset 447/528, 84.66 percent done
+INFO     | 2021-01-14 08:58:59,279 | progress   |       Finished subset 448/528, 84.85 percent done
+INFO     | 2021-01-14 08:59:17,418 | progress   |       Finished subset 449/528, 85.04 percent done
+INFO     | 2021-01-14 08:59:37,441 | progress   |       Finished subset 450/528, 85.23 percent done
+INFO     | 2021-01-14 08:59:49,281 | progress   |       Finished subset 451/528, 85.42 percent done
+INFO     | 2021-01-14 09:00:12,406 | progress   |       Finished subset 452/528, 85.61 percent done
+INFO     | 2021-01-14 09:00:23,796 | progress   |       Finished subset 453/528, 85.80 percent done
+INFO     | 2021-01-14 09:00:29,152 | progress   |       Finished subset 454/528, 85.98 percent done
+INFO     | 2021-01-14 09:00:38,682 | progress   |       Finished subset 455/528, 86.17 percent done
+INFO     | 2021-01-14 09:00:58,360 | progress   |       Finished subset 456/528, 86.36 percent done
+INFO     | 2021-01-14 09:01:16,574 | progress   |       Finished subset 457/528, 86.55 percent done
+INFO     | 2021-01-14 09:01:23,801 | progress   |       Finished subset 458/528, 86.74 percent done
+INFO     | 2021-01-14 09:01:45,724 | progress   |       Finished subset 459/528, 86.93 percent done
+INFO     | 2021-01-14 09:01:48,347 | progress   |       Finished subset 460/528, 87.12 percent done
+INFO     | 2021-01-14 09:01:55,763 | progress   |       Finished subset 461/528, 87.31 percent done
+INFO     | 2021-01-14 09:02:12,611 | progress   |       Finished subset 462/528, 87.50 percent done
+INFO     | 2021-01-14 09:02:43,553 | progress   |       Finished subset 463/528, 87.69 percent done
+INFO     | 2021-01-14 09:02:53,708 | progress   |       Finished subset 464/528, 87.88 percent done
+INFO     | 2021-01-14 09:03:04,123 | progress   |       Finished subset 465/528, 88.07 percent done
+INFO     | 2021-01-14 09:03:14,912 | progress   |       Finished subset 466/528, 88.26 percent done
+INFO     | 2021-01-14 09:03:38,023 | progress   |       Finished subset 467/528, 88.45 percent done
+INFO     | 2021-01-14 09:04:03,669 | progress   |       Finished subset 468/528, 88.64 percent done
+INFO     | 2021-01-14 09:04:12,391 | progress   |       Finished subset 469/528, 88.83 percent done
+INFO     | 2021-01-14 09:04:23,167 | progress   |       Finished subset 470/528, 89.02 percent done
+INFO     | 2021-01-14 09:04:33,544 | progress   |       Finished subset 471/528, 89.20 percent done
+INFO     | 2021-01-14 09:04:40,998 | progress   |       Finished subset 472/528, 89.39 percent done
+INFO     | 2021-01-14 09:04:51,253 | progress   |       Finished subset 473/528, 89.58 percent done
+INFO     | 2021-01-14 09:05:04,552 | progress   |       Finished subset 474/528, 89.77 percent done
+INFO     | 2021-01-14 09:05:10,101 | progress   |       Finished subset 475/528, 89.96 percent done
+INFO     | 2021-01-14 09:05:19,727 | progress   |       Finished subset 476/528, 90.15 percent done
+INFO     | 2021-01-14 09:05:30,854 | progress   |       Finished subset 477/528, 90.34 percent done
+INFO     | 2021-01-14 09:05:46,097 | progress   |       Finished subset 478/528, 90.53 percent done
+INFO     | 2021-01-14 09:05:54,586 | progress   |       Finished subset 479/528, 90.72 percent done
+INFO     | 2021-01-14 09:06:02,015 | progress   |       Finished subset 480/528, 90.91 percent done
+INFO     | 2021-01-14 09:06:09,103 | progress   |       Finished subset 481/528, 91.10 percent done
+INFO     | 2021-01-14 09:06:16,889 | progress   |       Finished subset 482/528, 91.29 percent done
+INFO     | 2021-01-14 09:06:26,181 | progress   |       Finished subset 483/528, 91.48 percent done
+INFO     | 2021-01-14 09:06:31,970 | progress   |       Finished subset 484/528, 91.67 percent done
+INFO     | 2021-01-14 09:06:37,115 | progress   |       Finished subset 485/528, 91.86 percent done
+INFO     | 2021-01-14 09:06:44,066 | progress   |       Finished subset 486/528, 92.05 percent done
+INFO     | 2021-01-14 09:06:50,015 | progress   |       Finished subset 487/528, 92.23 percent done
+INFO     | 2021-01-14 09:06:59,493 | progress   |       Finished subset 488/528, 92.42 percent done
+INFO     | 2021-01-14 09:07:05,703 | progress   |       Finished subset 489/528, 92.61 percent done
+INFO     | 2021-01-14 09:07:21,926 | progress   |       Finished subset 490/528, 92.80 percent done
+INFO     | 2021-01-14 09:07:41,572 | progress   |       Finished subset 491/528, 92.99 percent done
+INFO     | 2021-01-14 09:07:54,537 | progress   |       Finished subset 492/528, 93.18 percent done
+INFO     | 2021-01-14 09:08:06,150 | progress   |       Finished subset 493/528, 93.37 percent done
+INFO     | 2021-01-14 09:08:19,863 | progress   |       Finished subset 494/528, 93.56 percent done
+INFO     | 2021-01-14 09:08:34,790 | progress   |       Finished subset 495/528, 93.75 percent done
+INFO     | 2021-01-14 09:08:49,627 | progress   |       Finished subset 496/528, 93.94 percent done
+INFO     | 2021-01-14 09:09:00,232 | progress   |       Finished subset 497/528, 94.13 percent done
+INFO     | 2021-01-14 09:09:19,618 | progress   |       Finished subset 498/528, 94.32 percent done
+INFO     | 2021-01-14 09:09:22,882 | progress   |       Finished subset 499/528, 94.51 percent done
+INFO     | 2021-01-14 09:09:28,310 | progress   |       Finished subset 500/528, 94.70 percent done
+INFO     | 2021-01-14 09:09:35,834 | progress   |       Finished subset 501/528, 94.89 percent done
+INFO     | 2021-01-14 09:09:43,547 | progress   |       Finished subset 502/528, 95.08 percent done
+INFO     | 2021-01-14 09:09:50,166 | progress   |       Finished subset 503/528, 95.27 percent done
+INFO     | 2021-01-14 09:09:56,604 | progress   |       Finished subset 504/528, 95.45 percent done
+INFO     | 2021-01-14 09:10:08,137 | progress   |       Finished subset 505/528, 95.64 percent done
+INFO     | 2021-01-14 09:10:19,687 | progress   |       Finished subset 506/528, 95.83 percent done
+INFO     | 2021-01-14 09:10:25,341 | progress   |       Finished subset 507/528, 96.02 percent done
+INFO     | 2021-01-14 09:10:34,562 | progress   |       Finished subset 508/528, 96.21 percent done
+INFO     | 2021-01-14 09:10:47,366 | progress   |       Finished subset 509/528, 96.40 percent done
+INFO     | 2021-01-14 09:10:57,363 | progress   |       Finished subset 510/528, 96.59 percent done
+INFO     | 2021-01-14 09:11:11,937 | progress   |       Finished subset 511/528, 96.78 percent done
+INFO     | 2021-01-14 09:11:28,914 | progress   |       Finished subset 512/528, 96.97 percent done
+INFO     | 2021-01-14 09:11:46,150 | progress   |       Finished subset 513/528, 97.16 percent done
+INFO     | 2021-01-14 09:11:54,746 | progress   |       Finished subset 514/528, 97.35 percent done
+INFO     | 2021-01-14 09:12:10,440 | progress   |       Finished subset 515/528, 97.54 percent done
+INFO     | 2021-01-14 09:12:26,921 | progress   |       Finished subset 516/528, 97.73 percent done
+INFO     | 2021-01-14 09:12:36,555 | progress   |       Finished subset 517/528, 97.92 percent done
+INFO     | 2021-01-14 09:12:45,399 | progress   |       Finished subset 518/528, 98.11 percent done
+INFO     | 2021-01-14 09:12:54,609 | progress   |       Finished subset 519/528, 98.30 percent done
+INFO     | 2021-01-14 09:13:04,186 | progress   |       Finished subset 520/528, 98.48 percent done
+INFO     | 2021-01-14 09:13:15,624 | progress   |       Finished subset 521/528, 98.67 percent done
+INFO     | 2021-01-14 09:13:25,881 | progress   |       Finished subset 522/528, 98.86 percent done
+INFO     | 2021-01-14 09:13:34,451 | progress   |       Finished subset 523/528, 99.05 percent done
+INFO     | 2021-01-14 09:13:42,037 | progress   |       Finished subset 524/528, 99.24 percent done
+INFO     | 2021-01-14 09:13:50,194 | progress   |       Finished subset 525/528, 99.43 percent done
+INFO     | 2021-01-14 09:13:56,147 | progress   |       Finished subset 526/528, 99.62 percent done
+INFO     | 2021-01-14 09:14:03,478 | progress   |       Finished subset 527/528, 99.81 percent done
+INFO     | 2021-01-14 09:14:06,023 | progress   |       Finished subset 528/528, 100.00 percent done
+INFO     | 2021-01-14 09:14:06,029 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 09:14:06,175 | analysis_m |       Best scheme combines subsets: '28S_C2' and '28S_C3'
+INFO     | 2021-01-14 09:14:06,176 | analysis_m |       The best scheme improves the bic score by 50.01 to 64056.7
+INFO     | 2021-01-14 09:14:06,186 | analysis_m |    ***Greedy algorithm step 2***
+INFO     | 2021-01-14 09:14:06,188 | analysis_m |       Analysing 31 new subset pairs
+INFO     | 2021-01-14 09:14:28,061 | progress   |       Finished subset 1/31, 3.23 percent done
+INFO     | 2021-01-14 09:15:40,368 | progress   |       Finished subset 2/31, 6.45 percent done
+INFO     | 2021-01-14 09:15:42,229 | progress   |       Finished subset 3/31, 9.68 percent done
+INFO     | 2021-01-14 09:16:52,345 | progress   |       Finished subset 4/31, 12.90 percent done
+INFO     | 2021-01-14 09:16:54,032 | progress   |       Finished subset 5/31, 16.13 percent done
+INFO     | 2021-01-14 09:18:02,905 | progress   |       Finished subset 6/31, 19.35 percent done
+INFO     | 2021-01-14 09:18:07,963 | progress   |       Finished subset 7/31, 22.58 percent done
+INFO     | 2021-01-14 09:18:57,905 | progress   |       Finished subset 8/31, 25.81 percent done
+INFO     | 2021-01-14 09:19:22,296 | progress   |       Finished subset 9/31, 29.03 percent done
+INFO     | 2021-01-14 09:20:26,056 | progress   |       Finished subset 10/31, 32.26 percent done
+INFO     | 2021-01-14 09:20:34,999 | progress   |       Finished subset 11/31, 35.48 percent done
+INFO     | 2021-01-14 09:20:55,167 | progress   |       Finished subset 12/31, 38.71 percent done
+INFO     | 2021-01-14 09:21:14,820 | progress   |       Finished subset 13/31, 41.94 percent done
+INFO     | 2021-01-14 09:21:32,022 | progress   |       Finished subset 14/31, 45.16 percent done
+INFO     | 2021-01-14 09:21:50,704 | progress   |       Finished subset 15/31, 48.39 percent done
+INFO     | 2021-01-14 09:22:08,133 | progress   |       Finished subset 16/31, 51.61 percent done
+INFO     | 2021-01-14 09:22:42,403 | progress   |       Finished subset 17/31, 54.84 percent done
+INFO     | 2021-01-14 09:23:06,161 | progress   |       Finished subset 18/31, 58.06 percent done
+INFO     | 2021-01-14 09:23:19,967 | progress   |       Finished subset 19/31, 61.29 percent done
+INFO     | 2021-01-14 09:23:35,528 | progress   |       Finished subset 20/31, 64.52 percent done
+INFO     | 2021-01-14 09:23:53,968 | progress   |       Finished subset 21/31, 67.74 percent done
+INFO     | 2021-01-14 09:24:09,073 | progress   |       Finished subset 22/31, 70.97 percent done
+INFO     | 2021-01-14 09:24:26,898 | progress   |       Finished subset 23/31, 74.19 percent done
+INFO     | 2021-01-14 09:24:49,826 | progress   |       Finished subset 24/31, 77.42 percent done
+INFO     | 2021-01-14 09:25:21,469 | progress   |       Finished subset 25/31, 80.65 percent done
+INFO     | 2021-01-14 09:26:09,813 | progress   |       Finished subset 26/31, 83.87 percent done
+INFO     | 2021-01-14 09:26:23,060 | progress   |       Finished subset 27/31, 87.10 percent done
+INFO     | 2021-01-14 09:26:36,312 | progress   |       Finished subset 28/31, 90.32 percent done
+INFO     | 2021-01-14 09:27:40,774 | progress   |       Finished subset 29/31, 93.55 percent done
+INFO     | 2021-01-14 09:27:41,670 | progress   |       Finished subset 30/31, 96.77 percent done
+INFO     | 2021-01-14 09:27:54,136 | progress   |       Finished subset 31/31, 100.00 percent done
+INFO     | 2021-01-14 09:27:54,137 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 09:27:54,146 | analysis_m |       Best scheme combines subsets: '16S_C3' and '12S_C2'
+INFO     | 2021-01-14 09:27:54,146 | analysis_m |       The best scheme improves the bic score by 47.98 to 64008.7
+INFO     | 2021-01-14 09:27:54,147 | analysis_m |    ***Greedy algorithm step 3***
+INFO     | 2021-01-14 09:27:54,148 | analysis_m |       Analysing 30 new subset pairs
+INFO     | 2021-01-14 09:29:00,487 | progress   |       Finished subset 1/30, 3.33 percent done
+INFO     | 2021-01-14 09:30:05,546 | progress   |       Finished subset 2/30, 6.67 percent done
+INFO     | 2021-01-14 09:31:24,592 | progress   |       Finished subset 3/30, 10.00 percent done
+INFO     | 2021-01-14 09:31:58,923 | progress   |       Finished subset 4/30, 13.33 percent done
+INFO     | 2021-01-14 09:33:53,923 | progress   |       Finished subset 5/30, 16.67 percent done
+INFO     | 2021-01-14 09:34:50,127 | progress   |       Finished subset 6/30, 20.00 percent done
+INFO     | 2021-01-14 09:35:37,367 | progress   |       Finished subset 7/30, 23.33 percent done
+INFO     | 2021-01-14 09:36:45,849 | progress   |       Finished subset 8/30, 26.67 percent done
+INFO     | 2021-01-14 09:37:16,026 | progress   |       Finished subset 9/30, 30.00 percent done
+INFO     | 2021-01-14 09:38:06,069 | progress   |       Finished subset 10/30, 33.33 percent done
+INFO     | 2021-01-14 09:38:28,548 | progress   |       Finished subset 11/30, 36.67 percent done
+INFO     | 2021-01-14 09:39:24,560 | progress   |       Finished subset 12/30, 40.00 percent done
+INFO     | 2021-01-14 09:40:11,951 | progress   |       Finished subset 13/30, 43.33 percent done
+INFO     | 2021-01-14 09:40:46,806 | progress   |       Finished subset 14/30, 46.67 percent done
+INFO     | 2021-01-14 09:41:48,918 | progress   |       Finished subset 15/30, 50.00 percent done
+INFO     | 2021-01-14 09:42:09,666 | progress   |       Finished subset 16/30, 53.33 percent done
+INFO     | 2021-01-14 09:42:56,423 | progress   |       Finished subset 17/30, 56.67 percent done
+INFO     | 2021-01-14 09:43:54,339 | progress   |       Finished subset 18/30, 60.00 percent done
+INFO     | 2021-01-14 09:44:19,959 | progress   |       Finished subset 19/30, 63.33 percent done
+INFO     | 2021-01-14 09:45:03,837 | progress   |       Finished subset 20/30, 66.67 percent done
+INFO     | 2021-01-14 09:45:42,032 | progress   |       Finished subset 21/30, 70.00 percent done
+INFO     | 2021-01-14 09:46:19,917 | progress   |       Finished subset 22/30, 73.33 percent done
+INFO     | 2021-01-14 09:47:23,212 | progress   |       Finished subset 23/30, 76.67 percent done
+INFO     | 2021-01-14 09:47:41,163 | progress   |       Finished subset 24/30, 80.00 percent done
+INFO     | 2021-01-14 09:48:19,406 | progress   |       Finished subset 25/30, 83.33 percent done
+INFO     | 2021-01-14 09:49:01,052 | progress   |       Finished subset 26/30, 86.67 percent done
+INFO     | 2021-01-14 09:49:25,741 | progress   |       Finished subset 27/30, 90.00 percent done
+INFO     | 2021-01-14 09:50:21,240 | progress   |       Finished subset 28/30, 93.33 percent done
+INFO     | 2021-01-14 09:50:47,416 | progress   |       Finished subset 29/30, 96.67 percent done
+INFO     | 2021-01-14 09:51:23,175 | progress   |       Finished subset 30/30, 100.00 percent done
+INFO     | 2021-01-14 09:51:23,175 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 09:51:23,193 | analysis_m |       Best scheme combines subsets: '16S_C2' and '12S_C1'
+INFO     | 2021-01-14 09:51:23,193 | analysis_m |       The best scheme improves the bic score by 47.37 to 63961.3
+INFO     | 2021-01-14 09:51:23,198 | analysis_m |    ***Greedy algorithm step 4***
+INFO     | 2021-01-14 09:51:23,199 | analysis_m |       Analysing 29 new subset pairs
+INFO     | 2021-01-14 09:52:09,043 | progress   |       Finished subset 1/29, 3.45 percent done
+INFO     | 2021-01-14 09:53:28,121 | progress   |       Finished subset 2/29, 6.90 percent done
+INFO     | 2021-01-14 09:54:09,868 | progress   |       Finished subset 3/29, 10.34 percent done
+INFO     | 2021-01-14 09:55:13,074 | progress   |       Finished subset 4/29, 13.79 percent done
+INFO     | 2021-01-14 09:55:33,173 | progress   |       Finished subset 5/29, 17.24 percent done
+INFO     | 2021-01-14 09:56:25,074 | progress   |       Finished subset 6/29, 20.69 percent done
+INFO     | 2021-01-14 09:57:44,965 | progress   |       Finished subset 7/29, 24.14 percent done
+INFO     | 2021-01-14 09:58:39,597 | progress   |       Finished subset 8/29, 27.59 percent done
+INFO     | 2021-01-14 09:59:05,255 | progress   |       Finished subset 9/29, 31.03 percent done
+INFO     | 2021-01-14 09:59:56,010 | progress   |       Finished subset 10/29, 34.48 percent done
+INFO     | 2021-01-14 10:00:24,646 | progress   |       Finished subset 11/29, 37.93 percent done
+INFO     | 2021-01-14 10:01:02,678 | progress   |       Finished subset 12/29, 41.38 percent done
+INFO     | 2021-01-14 10:01:43,553 | progress   |       Finished subset 13/29, 44.83 percent done
+INFO     | 2021-01-14 10:02:16,477 | progress   |       Finished subset 14/29, 48.28 percent done
+INFO     | 2021-01-14 10:02:59,267 | progress   |       Finished subset 15/29, 51.72 percent done
+INFO     | 2021-01-14 10:03:43,871 | progress   |       Finished subset 16/29, 55.17 percent done
+INFO     | 2021-01-14 10:04:27,638 | progress   |       Finished subset 17/29, 58.62 percent done
+INFO     | 2021-01-14 10:04:53,817 | progress   |       Finished subset 18/29, 62.07 percent done
+INFO     | 2021-01-14 10:05:31,685 | progress   |       Finished subset 19/29, 65.52 percent done
+INFO     | 2021-01-14 10:06:07,041 | progress   |       Finished subset 20/29, 68.97 percent done
+INFO     | 2021-01-14 10:06:45,357 | progress   |       Finished subset 21/29, 72.41 percent done
+INFO     | 2021-01-14 10:07:20,425 | progress   |       Finished subset 22/29, 75.86 percent done
+INFO     | 2021-01-14 10:08:18,368 | progress   |       Finished subset 23/29, 79.31 percent done
+INFO     | 2021-01-14 10:08:41,203 | progress   |       Finished subset 24/29, 82.76 percent done
+INFO     | 2021-01-14 10:09:17,563 | progress   |       Finished subset 25/29, 86.21 percent done
+INFO     | 2021-01-14 10:09:59,407 | progress   |       Finished subset 26/29, 89.66 percent done
+INFO     | 2021-01-14 10:10:33,602 | progress   |       Finished subset 27/29, 93.10 percent done
+INFO     | 2021-01-14 10:11:07,495 | progress   |       Finished subset 28/29, 96.55 percent done
+INFO     | 2021-01-14 10:11:41,613 | progress   |       Finished subset 29/29, 100.00 percent done
+INFO     | 2021-01-14 10:11:41,614 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 10:11:41,631 | analysis_m |       Best scheme combines subsets: '16S_C1' and '16S_C3, 12S_C2'
+INFO     | 2021-01-14 10:11:41,631 | analysis_m |       The best scheme improves the bic score by 46.59 to 63914.7
+INFO     | 2021-01-14 10:11:41,644 | analysis_m |    ***Greedy algorithm step 5***
+INFO     | 2021-01-14 10:11:41,645 | analysis_m |       Analysing 28 new subset pairs
+INFO     | 2021-01-14 10:14:03,897 | progress   |       Finished subset 1/28, 3.57 percent done
+INFO     | 2021-01-14 10:14:58,439 | progress   |       Finished subset 2/28, 7.14 percent done
+INFO     | 2021-01-14 10:16:06,982 | progress   |       Finished subset 3/28, 10.71 percent done
+INFO     | 2021-01-14 10:17:24,439 | progress   |       Finished subset 4/28, 14.29 percent done
+INFO     | 2021-01-14 10:18:37,054 | progress   |       Finished subset 5/28, 17.86 percent done
+INFO     | 2021-01-14 10:20:22,715 | progress   |       Finished subset 6/28, 21.43 percent done
+INFO     | 2021-01-14 10:21:44,759 | progress   |       Finished subset 7/28, 25.00 percent done
+INFO     | 2021-01-14 10:22:55,293 | progress   |       Finished subset 8/28, 28.57 percent done
+INFO     | 2021-01-14 10:24:01,329 | progress   |       Finished subset 9/28, 32.14 percent done
+INFO     | 2021-01-14 10:24:44,067 | progress   |       Finished subset 10/28, 35.71 percent done
+INFO     | 2021-01-14 10:25:54,666 | progress   |       Finished subset 11/28, 39.29 percent done
+INFO     | 2021-01-14 10:26:54,756 | progress   |       Finished subset 12/28, 42.86 percent done
+INFO     | 2021-01-14 10:27:35,093 | progress   |       Finished subset 13/28, 46.43 percent done
+INFO     | 2021-01-14 10:28:47,884 | progress   |       Finished subset 14/28, 50.00 percent done
+INFO     | 2021-01-14 10:29:51,158 | progress   |       Finished subset 15/28, 53.57 percent done
+INFO     | 2021-01-14 10:30:44,761 | progress   |       Finished subset 16/28, 57.14 percent done
+INFO     | 2021-01-14 10:31:23,396 | progress   |       Finished subset 17/28, 60.71 percent done
+INFO     | 2021-01-14 10:32:32,417 | progress   |       Finished subset 18/28, 64.29 percent done
+INFO     | 2021-01-14 10:33:36,507 | progress   |       Finished subset 19/28, 67.86 percent done
+INFO     | 2021-01-14 10:34:42,164 | progress   |       Finished subset 20/28, 71.43 percent done
+INFO     | 2021-01-14 10:35:50,897 | progress   |       Finished subset 21/28, 75.00 percent done
+INFO     | 2021-01-14 10:36:38,565 | progress   |       Finished subset 22/28, 78.57 percent done
+INFO     | 2021-01-14 10:37:23,465 | progress   |       Finished subset 23/28, 82.14 percent done
+INFO     | 2021-01-14 10:38:09,665 | progress   |       Finished subset 24/28, 85.71 percent done
+INFO     | 2021-01-14 10:39:03,299 | progress   |       Finished subset 25/28, 89.29 percent done
+INFO     | 2021-01-14 10:40:15,172 | progress   |       Finished subset 26/28, 92.86 percent done
+INFO     | 2021-01-14 10:41:02,728 | progress   |       Finished subset 27/28, 96.43 percent done
+INFO     | 2021-01-14 10:41:53,367 | progress   |       Finished subset 28/28, 100.00 percent done
+INFO     | 2021-01-14 10:41:53,367 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 10:41:53,383 | analysis_m |       Best scheme combines subsets: '12S_C3' and '16S_C2, 12S_C1'
+INFO     | 2021-01-14 10:41:53,383 | analysis_m |       The best scheme improves the bic score by 45.21 to 63869.5
+INFO     | 2021-01-14 10:41:53,395 | analysis_m |    ***Greedy algorithm step 6***
+INFO     | 2021-01-14 10:41:53,396 | analysis_m |       Analysing 27 new subset pairs
+INFO     | 2021-01-14 10:43:19,753 | progress   |       Finished subset 1/27, 3.70 percent done
+INFO     | 2021-01-14 10:43:54,451 | progress   |       Finished subset 2/27, 7.41 percent done
+INFO     | 2021-01-14 10:45:05,903 | progress   |       Finished subset 3/27, 11.11 percent done
+INFO     | 2021-01-14 10:46:27,227 | progress   |       Finished subset 4/27, 14.81 percent done
+INFO     | 2021-01-14 10:47:04,746 | progress   |       Finished subset 5/27, 18.52 percent done
+INFO     | 2021-01-14 10:47:44,596 | progress   |       Finished subset 6/27, 22.22 percent done
+INFO     | 2021-01-14 10:48:51,646 | progress   |       Finished subset 7/27, 25.93 percent done
+INFO     | 2021-01-14 10:50:30,215 | progress   |       Finished subset 8/27, 29.63 percent done
+INFO     | 2021-01-14 10:51:01,042 | progress   |       Finished subset 9/27, 33.33 percent done
+INFO     | 2021-01-14 10:51:44,113 | progress   |       Finished subset 10/27, 37.04 percent done
+INFO     | 2021-01-14 10:52:28,489 | progress   |       Finished subset 11/27, 40.74 percent done
+INFO     | 2021-01-14 10:53:22,966 | progress   |       Finished subset 12/27, 44.44 percent done
+INFO     | 2021-01-14 10:54:09,857 | progress   |       Finished subset 13/27, 48.15 percent done
+INFO     | 2021-01-14 10:54:56,594 | progress   |       Finished subset 14/27, 51.85 percent done
+INFO     | 2021-01-14 10:55:45,752 | progress   |       Finished subset 15/27, 55.56 percent done
+INFO     | 2021-01-14 10:56:35,539 | progress   |       Finished subset 16/27, 59.26 percent done
+INFO     | 2021-01-14 10:57:21,572 | progress   |       Finished subset 17/27, 62.96 percent done
+INFO     | 2021-01-14 10:58:08,997 | progress   |       Finished subset 18/27, 66.67 percent done
+INFO     | 2021-01-14 10:59:00,796 | progress   |       Finished subset 19/27, 70.37 percent done
+INFO     | 2021-01-14 10:59:49,232 | progress   |       Finished subset 20/27, 74.07 percent done
+INFO     | 2021-01-14 11:00:38,682 | progress   |       Finished subset 21/27, 77.78 percent done
+INFO     | 2021-01-14 11:01:29,837 | progress   |       Finished subset 22/27, 81.48 percent done
+INFO     | 2021-01-14 11:02:08,732 | progress   |       Finished subset 23/27, 85.19 percent done
+INFO     | 2021-01-14 11:02:59,809 | progress   |       Finished subset 24/27, 88.89 percent done
+INFO     | 2021-01-14 11:03:45,825 | progress   |       Finished subset 25/27, 92.59 percent done
+INFO     | 2021-01-14 11:04:30,470 | progress   |       Finished subset 26/27, 96.30 percent done
+INFO     | 2021-01-14 11:05:13,309 | progress   |       Finished subset 27/27, 100.00 percent done
+INFO     | 2021-01-14 11:05:13,309 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 11:05:13,325 | analysis_m |       Best scheme combines subsets: 'enolase_C3' and 'PEPCK_C2'
+INFO     | 2021-01-14 11:05:13,325 | analysis_m |       The best scheme improves the bic score by 44.74 to 63824.8
+INFO     | 2021-01-14 11:05:13,326 | analysis_m |    ***Greedy algorithm step 7***
+INFO     | 2021-01-14 11:05:13,327 | analysis_m |       Analysing 26 new subset pairs
+INFO     | 2021-01-14 11:06:26,468 | progress   |       Finished subset 1/26, 3.85 percent done
+INFO     | 2021-01-14 11:07:12,450 | progress   |       Finished subset 2/26, 7.69 percent done
+INFO     | 2021-01-14 11:07:33,573 | progress   |       Finished subset 3/26, 11.54 percent done
+INFO     | 2021-01-14 11:08:00,978 | progress   |       Finished subset 4/26, 15.38 percent done
+INFO     | 2021-01-14 11:08:48,053 | progress   |       Finished subset 5/26, 19.23 percent done
+INFO     | 2021-01-14 11:09:04,407 | progress   |       Finished subset 6/26, 23.08 percent done
+INFO     | 2021-01-14 11:09:29,604 | progress   |       Finished subset 7/26, 26.92 percent done
+INFO     | 2021-01-14 11:09:44,000 | progress   |       Finished subset 8/26, 30.77 percent done
+INFO     | 2021-01-14 11:10:35,279 | progress   |       Finished subset 9/26, 34.62 percent done
+INFO     | 2021-01-14 11:10:51,166 | progress   |       Finished subset 10/26, 38.46 percent done
+INFO     | 2021-01-14 11:11:06,854 | progress   |       Finished subset 11/26, 42.31 percent done
+INFO     | 2021-01-14 11:11:19,678 | progress   |       Finished subset 12/26, 46.15 percent done
+INFO     | 2021-01-14 11:12:03,695 | progress   |       Finished subset 13/26, 50.00 percent done
+INFO     | 2021-01-14 11:12:03,933 | progress   |       Finished subset 14/26, 53.85 percent done
+INFO     | 2021-01-14 11:12:18,184 | progress   |       Finished subset 15/26, 57.69 percent done
+INFO     | 2021-01-14 11:12:30,527 | progress   |       Finished subset 16/26, 61.54 percent done
+INFO     | 2021-01-14 11:12:39,827 | progress   |       Finished subset 17/26, 65.38 percent done
+INFO     | 2021-01-14 11:12:51,022 | progress   |       Finished subset 18/26, 69.23 percent done
+INFO     | 2021-01-14 11:13:22,195 | progress   |       Finished subset 19/26, 73.08 percent done
+INFO     | 2021-01-14 11:13:50,454 | progress   |       Finished subset 20/26, 76.92 percent done
+INFO     | 2021-01-14 11:14:42,696 | progress   |       Finished subset 21/26, 80.77 percent done
+INFO     | 2021-01-14 11:15:02,210 | progress   |       Finished subset 22/26, 84.62 percent done
+INFO     | 2021-01-14 11:15:20,708 | progress   |       Finished subset 23/26, 88.46 percent done
+INFO     | 2021-01-14 11:15:31,318 | progress   |       Finished subset 24/26, 92.31 percent done
+INFO     | 2021-01-14 11:15:49,481 | progress   |       Finished subset 25/26, 96.15 percent done
+INFO     | 2021-01-14 11:16:03,929 | progress   |       Finished subset 26/26, 100.00 percent done
+INFO     | 2021-01-14 11:16:03,929 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 11:16:03,944 | analysis_m |       Best scheme combines subsets: 'tRNA_C2' and '16S_C1, 16S_C3, 12S_C2'
+INFO     | 2021-01-14 11:16:03,944 | analysis_m |       The best scheme improves the bic score by 44.51 to 63780.3
+INFO     | 2021-01-14 11:16:03,945 | analysis_m |    ***Greedy algorithm step 8***
+INFO     | 2021-01-14 11:16:03,946 | analysis_m |       Analysing 25 new subset pairs
+INFO     | 2021-01-14 11:17:57,335 | progress   |       Finished subset 1/25, 4.00 percent done
+INFO     | 2021-01-14 11:19:37,541 | progress   |       Finished subset 2/25, 8.00 percent done
+INFO     | 2021-01-14 11:20:40,896 | progress   |       Finished subset 3/25, 12.00 percent done
+INFO     | 2021-01-14 11:21:31,333 | progress   |       Finished subset 4/25, 16.00 percent done
+INFO     | 2021-01-14 11:22:51,437 | progress   |       Finished subset 5/25, 20.00 percent done
+INFO     | 2021-01-14 11:24:10,075 | progress   |       Finished subset 6/25, 24.00 percent done
+INFO     | 2021-01-14 11:25:58,853 | progress   |       Finished subset 7/25, 28.00 percent done
+INFO     | 2021-01-14 11:26:35,236 | progress   |       Finished subset 8/25, 32.00 percent done
+INFO     | 2021-01-14 11:28:35,030 | progress   |       Finished subset 9/25, 36.00 percent done
+INFO     | 2021-01-14 11:29:40,316 | progress   |       Finished subset 10/25, 40.00 percent done
+INFO     | 2021-01-14 11:30:08,996 | progress   |       Finished subset 11/25, 44.00 percent done
+INFO     | 2021-01-14 11:31:34,090 | progress   |       Finished subset 12/25, 48.00 percent done
+INFO     | 2021-01-14 11:32:14,663 | progress   |       Finished subset 13/25, 52.00 percent done
+INFO     | 2021-01-14 11:33:34,110 | progress   |       Finished subset 14/25, 56.00 percent done
+INFO     | 2021-01-14 11:34:37,981 | progress   |       Finished subset 15/25, 60.00 percent done
+INFO     | 2021-01-14 11:35:12,371 | progress   |       Finished subset 16/25, 64.00 percent done
+INFO     | 2021-01-14 11:36:22,366 | progress   |       Finished subset 17/25, 68.00 percent done
+INFO     | 2021-01-14 11:37:25,176 | progress   |       Finished subset 18/25, 72.00 percent done
+INFO     | 2021-01-14 11:38:48,699 | progress   |       Finished subset 19/25, 76.00 percent done
+INFO     | 2021-01-14 11:40:21,628 | progress   |       Finished subset 20/25, 80.00 percent done
+INFO     | 2021-01-14 11:41:43,022 | progress   |       Finished subset 21/25, 84.00 percent done
+INFO     | 2021-01-14 11:42:42,546 | progress   |       Finished subset 22/25, 88.00 percent done
+INFO     | 2021-01-14 11:43:55,612 | progress   |       Finished subset 23/25, 92.00 percent done
+INFO     | 2021-01-14 11:45:38,270 | progress   |       Finished subset 24/25, 96.00 percent done
+INFO     | 2021-01-14 11:46:31,703 | progress   |       Finished subset 25/25, 100.00 percent done
+INFO     | 2021-01-14 11:46:31,703 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 11:46:31,719 | analysis_m |       Best scheme combines subsets: 'tRNA_C1' and 'tRNA_C2, 16S_C1, 16S_C3, 12S_C2'
+INFO     | 2021-01-14 11:46:31,719 | analysis_m |       The best scheme improves the bic score by 44.50 to 63735.8
+INFO     | 2021-01-14 11:46:31,747 | analysis_m |    ***Greedy algorithm step 9***
+INFO     | 2021-01-14 11:46:31,748 | analysis_m |       Analysing 24 new subset pairs
+INFO     | 2021-01-14 11:49:08,163 | progress   |       Finished subset 1/24, 4.17 percent done
+INFO     | 2021-01-14 11:50:51,304 | progress   |       Finished subset 2/24, 8.33 percent done
+INFO     | 2021-01-14 11:51:46,166 | progress   |       Finished subset 3/24, 12.50 percent done
+INFO     | 2021-01-14 11:54:29,498 | progress   |       Finished subset 4/24, 16.67 percent done
+INFO     | 2021-01-14 11:55:51,988 | progress   |       Finished subset 5/24, 20.83 percent done
+INFO     | 2021-01-14 11:57:28,500 | progress   |       Finished subset 6/24, 25.00 percent done
+INFO     | 2021-01-14 11:59:23,074 | progress   |       Finished subset 7/24, 29.17 percent done
+INFO     | 2021-01-14 11:59:42,468 | progress   |       Finished subset 8/24, 33.33 percent done
+INFO     | 2021-01-14 12:01:28,942 | progress   |       Finished subset 9/24, 37.50 percent done
+INFO     | 2021-01-14 12:02:45,448 | progress   |       Finished subset 10/24, 41.67 percent done
+INFO     | 2021-01-14 12:03:35,149 | progress   |       Finished subset 11/24, 45.83 percent done
+INFO     | 2021-01-14 12:05:01,657 | progress   |       Finished subset 12/24, 50.00 percent done
+INFO     | 2021-01-14 12:06:02,413 | progress   |       Finished subset 13/24, 54.17 percent done
+INFO     | 2021-01-14 12:07:21,698 | progress   |       Finished subset 14/24, 58.33 percent done
+INFO     | 2021-01-14 12:08:13,958 | progress   |       Finished subset 15/24, 62.50 percent done
+INFO     | 2021-01-14 12:08:55,092 | progress   |       Finished subset 16/24, 66.67 percent done
+INFO     | 2021-01-14 12:10:24,433 | progress   |       Finished subset 17/24, 70.83 percent done
+INFO     | 2021-01-14 12:11:20,352 | progress   |       Finished subset 18/24, 75.00 percent done
+INFO     | 2021-01-14 12:12:21,474 | progress   |       Finished subset 19/24, 79.17 percent done
+INFO     | 2021-01-14 12:13:40,041 | progress   |       Finished subset 20/24, 83.33 percent done
+INFO     | 2021-01-14 12:14:44,173 | progress   |       Finished subset 21/24, 87.50 percent done
+INFO     | 2021-01-14 12:15:29,145 | progress   |       Finished subset 22/24, 91.67 percent done
+INFO     | 2021-01-14 12:16:35,202 | progress   |       Finished subset 23/24, 95.83 percent done
+INFO     | 2021-01-14 12:17:33,202 | progress   |       Finished subset 24/24, 100.00 percent done
+INFO     | 2021-01-14 12:17:33,203 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 12:17:33,216 | analysis_m |       Best scheme combines subsets: 'tRNA_C3' and 'tRNA_C1, tRNA_C2, 16S_C1, 16S_C3, 12S_C2'
+INFO     | 2021-01-14 12:17:33,216 | analysis_m |       The best scheme improves the bic score by 44.12 to 63691.7
+INFO     | 2021-01-14 12:17:33,218 | analysis_m |    ***Greedy algorithm step 10***
+INFO     | 2021-01-14 12:17:33,218 | analysis_m |       Analysing 23 new subset pairs
+INFO     | 2021-01-14 12:19:13,705 | progress   |       Finished subset 1/23, 4.35 percent done
+INFO     | 2021-01-14 12:20:44,286 | progress   |       Finished subset 2/23, 8.70 percent done
+INFO     | 2021-01-14 12:22:16,538 | progress   |       Finished subset 3/23, 13.04 percent done
+INFO     | 2021-01-14 12:23:35,616 | progress   |       Finished subset 4/23, 17.39 percent done
+INFO     | 2021-01-14 12:24:49,454 | progress   |       Finished subset 5/23, 21.74 percent done
+INFO     | 2021-01-14 12:26:19,104 | progress   |       Finished subset 6/23, 26.09 percent done
+INFO     | 2021-01-14 12:28:12,941 | progress   |       Finished subset 7/23, 30.43 percent done
+INFO     | 2021-01-14 12:28:39,982 | progress   |       Finished subset 8/23, 34.78 percent done
+INFO     | 2021-01-14 12:30:42,279 | progress   |       Finished subset 9/23, 39.13 percent done
+INFO     | 2021-01-14 12:32:21,161 | progress   |       Finished subset 10/23, 43.48 percent done
+INFO     | 2021-01-14 12:32:50,683 | progress   |       Finished subset 11/23, 47.83 percent done
+INFO     | 2021-01-14 12:34:27,412 | progress   |       Finished subset 12/23, 52.17 percent done
+INFO     | 2021-01-14 12:35:23,229 | progress   |       Finished subset 13/23, 56.52 percent done
+INFO     | 2021-01-14 12:36:39,145 | progress   |       Finished subset 14/23, 60.87 percent done
+INFO     | 2021-01-14 12:37:40,382 | progress   |       Finished subset 15/23, 65.22 percent done
+INFO     | 2021-01-14 12:38:40,386 | progress   |       Finished subset 16/23, 69.57 percent done
+INFO     | 2021-01-14 12:40:04,934 | progress   |       Finished subset 17/23, 73.91 percent done
+INFO     | 2021-01-14 12:41:00,756 | progress   |       Finished subset 18/23, 78.26 percent done
+INFO     | 2021-01-14 12:42:18,460 | progress   |       Finished subset 19/23, 82.61 percent done
+INFO     | 2021-01-14 12:43:34,951 | progress   |       Finished subset 20/23, 86.96 percent done
+INFO     | 2021-01-14 12:44:22,025 | progress   |       Finished subset 21/23, 91.30 percent done
+INFO     | 2021-01-14 12:45:31,913 | progress   |       Finished subset 22/23, 95.65 percent done
+INFO     | 2021-01-14 12:46:26,678 | progress   |       Finished subset 23/23, 100.00 percent done
+INFO     | 2021-01-14 12:46:26,679 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 12:46:26,691 | analysis_m |       Best scheme combines subsets: 'H3_C2' and 'H3_C3'
+INFO     | 2021-01-14 12:46:26,691 | analysis_m |       The best scheme improves the bic score by 43.58 to 63648.1
+INFO     | 2021-01-14 12:46:26,760 | analysis_m |    ***Greedy algorithm step 11***
+INFO     | 2021-01-14 12:46:26,761 | analysis_m |       Analysing 22 new subset pairs
+INFO     | 2021-01-14 12:47:47,553 | progress   |       Finished subset 1/22, 4.55 percent done
+INFO     | 2021-01-14 12:48:53,024 | progress   |       Finished subset 2/22, 9.09 percent done
+INFO     | 2021-01-14 12:49:18,440 | progress   |       Finished subset 3/22, 13.64 percent done
+INFO     | 2021-01-14 12:50:04,138 | progress   |       Finished subset 4/22, 18.18 percent done
+INFO     | 2021-01-14 12:50:26,683 | progress   |       Finished subset 5/22, 22.73 percent done
+INFO     | 2021-01-14 12:51:11,613 | progress   |       Finished subset 6/22, 27.27 percent done
+INFO     | 2021-01-14 12:51:42,301 | progress   |       Finished subset 7/22, 31.82 percent done
+INFO     | 2021-01-14 12:52:14,868 | progress   |       Finished subset 8/22, 36.36 percent done
+INFO     | 2021-01-14 12:52:56,639 | progress   |       Finished subset 9/22, 40.91 percent done
+INFO     | 2021-01-14 12:53:42,223 | progress   |       Finished subset 10/22, 45.45 percent done
+INFO     | 2021-01-14 12:53:53,567 | progress   |       Finished subset 11/22, 50.00 percent done
+INFO     | 2021-01-14 12:54:12,967 | progress   |       Finished subset 12/22, 54.55 percent done
+INFO     | 2021-01-14 12:54:41,671 | progress   |       Finished subset 13/22, 59.09 percent done
+INFO     | 2021-01-14 12:54:49,171 | progress   |       Finished subset 14/22, 63.64 percent done
+INFO     | 2021-01-14 12:55:14,226 | progress   |       Finished subset 15/22, 68.18 percent done
+INFO     | 2021-01-14 12:55:25,952 | progress   |       Finished subset 16/22, 72.73 percent done
+INFO     | 2021-01-14 12:55:36,132 | progress   |       Finished subset 17/22, 77.27 percent done
+INFO     | 2021-01-14 12:56:02,710 | progress   |       Finished subset 18/22, 81.82 percent done
+INFO     | 2021-01-14 12:56:07,490 | progress   |       Finished subset 19/22, 86.36 percent done
+INFO     | 2021-01-14 12:56:39,952 | progress   |       Finished subset 20/22, 90.91 percent done
+INFO     | 2021-01-14 12:57:10,006 | progress   |       Finished subset 21/22, 95.45 percent done
+INFO     | 2021-01-14 12:57:18,127 | progress   |       Finished subset 22/22, 100.00 percent done
+INFO     | 2021-01-14 12:57:18,128 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 12:57:18,139 | analysis_m |       Best scheme combines subsets: 'COI_C3' and 'Cytb_C1'
+INFO     | 2021-01-14 12:57:18,140 | analysis_m |       The best scheme improves the bic score by 43.03 to 63605.0
+INFO     | 2021-01-14 12:57:18,141 | analysis_m |    ***Greedy algorithm step 12***
+INFO     | 2021-01-14 12:57:18,141 | analysis_m |       Analysing 21 new subset pairs
+INFO     | 2021-01-14 12:59:11,536 | progress   |       Finished subset 1/21, 4.76 percent done
+INFO     | 2021-01-14 13:01:19,469 | progress   |       Finished subset 2/21, 9.52 percent done
+INFO     | 2021-01-14 13:02:57,196 | progress   |       Finished subset 3/21, 14.29 percent done
+INFO     | 2021-01-14 13:04:14,322 | progress   |       Finished subset 4/21, 19.05 percent done
+INFO     | 2021-01-14 13:05:44,918 | progress   |       Finished subset 5/21, 23.81 percent done
+INFO     | 2021-01-14 13:06:58,775 | progress   |       Finished subset 6/21, 28.57 percent done
+INFO     | 2021-01-14 13:08:22,910 | progress   |       Finished subset 7/21, 33.33 percent done
+INFO     | 2021-01-14 13:09:48,642 | progress   |       Finished subset 8/21, 38.10 percent done
+INFO     | 2021-01-14 13:11:19,396 | progress   |       Finished subset 9/21, 42.86 percent done
+INFO     | 2021-01-14 13:12:39,418 | progress   |       Finished subset 10/21, 47.62 percent done
+INFO     | 2021-01-14 13:14:10,870 | progress   |       Finished subset 11/21, 52.38 percent done
+INFO     | 2021-01-14 13:15:15,624 | progress   |       Finished subset 12/21, 57.14 percent done
+INFO     | 2021-01-14 13:16:40,772 | progress   |       Finished subset 13/21, 61.90 percent done
+INFO     | 2021-01-14 13:17:53,445 | progress   |       Finished subset 14/21, 66.67 percent done
+INFO     | 2021-01-14 13:19:10,784 | progress   |       Finished subset 15/21, 71.43 percent done
+INFO     | 2021-01-14 13:20:37,157 | progress   |       Finished subset 16/21, 76.19 percent done
+INFO     | 2021-01-14 13:21:28,985 | progress   |       Finished subset 17/21, 80.95 percent done
+INFO     | 2021-01-14 13:22:34,143 | progress   |       Finished subset 18/21, 85.71 percent done
+INFO     | 2021-01-14 13:24:04,053 | progress   |       Finished subset 19/21, 90.48 percent done
+INFO     | 2021-01-14 13:25:14,761 | progress   |       Finished subset 20/21, 95.24 percent done
+INFO     | 2021-01-14 13:26:26,715 | progress   |       Finished subset 21/21, 100.00 percent done
+INFO     | 2021-01-14 13:26:26,715 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 13:26:26,726 | analysis_m |       Best scheme combines subsets: 'ND1_C1' and 'Cytb_C2'
+INFO     | 2021-01-14 13:26:26,726 | analysis_m |       The best scheme improves the bic score by 36.22 to 63568.8
+INFO     | 2021-01-14 13:26:26,746 | analysis_m |    ***Greedy algorithm step 13***
+INFO     | 2021-01-14 13:26:26,747 | analysis_m |       Analysing 20 new subset pairs
+INFO     | 2021-01-14 13:28:39,858 | progress   |       Finished subset 1/20, 5.00 percent done
+INFO     | 2021-01-14 13:29:33,429 | progress   |       Finished subset 2/20, 10.00 percent done
+INFO     | 2021-01-14 13:30:59,809 | progress   |       Finished subset 3/20, 15.00 percent done
+INFO     | 2021-01-14 13:31:04,332 | progress   |       Finished subset 4/20, 20.00 percent done
+INFO     | 2021-01-14 13:31:42,881 | progress   |       Finished subset 5/20, 25.00 percent done
+INFO     | 2021-01-14 13:32:11,587 | progress   |       Finished subset 6/20, 30.00 percent done
+INFO     | 2021-01-14 13:32:49,565 | progress   |       Finished subset 7/20, 35.00 percent done
+INFO     | 2021-01-14 13:33:22,017 | progress   |       Finished subset 8/20, 40.00 percent done
+INFO     | 2021-01-14 13:33:42,299 | progress   |       Finished subset 9/20, 45.00 percent done
+INFO     | 2021-01-14 13:34:35,841 | progress   |       Finished subset 10/20, 50.00 percent done
+INFO     | 2021-01-14 13:34:49,425 | progress   |       Finished subset 11/20, 55.00 percent done
+INFO     | 2021-01-14 13:35:14,357 | progress   |       Finished subset 12/20, 60.00 percent done
+INFO     | 2021-01-14 13:35:40,019 | progress   |       Finished subset 13/20, 65.00 percent done
+INFO     | 2021-01-14 13:36:06,402 | progress   |       Finished subset 14/20, 70.00 percent done
+INFO     | 2021-01-14 13:36:37,611 | progress   |       Finished subset 15/20, 75.00 percent done
+INFO     | 2021-01-14 13:36:54,197 | progress   |       Finished subset 16/20, 80.00 percent done
+INFO     | 2021-01-14 13:37:19,814 | progress   |       Finished subset 17/20, 85.00 percent done
+INFO     | 2021-01-14 13:37:46,587 | progress   |       Finished subset 18/20, 90.00 percent done
+INFO     | 2021-01-14 13:38:33,310 | progress   |       Finished subset 19/20, 95.00 percent done
+INFO     | 2021-01-14 13:38:57,471 | progress   |       Finished subset 20/20, 100.00 percent done
+INFO     | 2021-01-14 13:38:57,471 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 13:38:57,481 | analysis_m |       Best scheme combines subsets: '12S_C3, 16S_C2, 12S_C1' and 'tRNA_C3, tRNA_C1, tRNA_C2, 16S_C1, 16S_C3, 12S_C2'
+INFO     | 2021-01-14 13:38:57,481 | analysis_m |       The best scheme improves the bic score by 34.52 to 63534.3
+INFO     | 2021-01-14 13:38:57,503 | analysis_m |    ***Greedy algorithm step 14***
+INFO     | 2021-01-14 13:38:57,503 | analysis_m |       Analysing 19 new subset pairs
+INFO     | 2021-01-14 13:42:12,548 | progress   |       Finished subset 1/19, 5.26 percent done
+INFO     | 2021-01-14 13:43:58,041 | progress   |       Finished subset 2/19, 10.53 percent done
+INFO     | 2021-01-14 13:45:50,825 | progress   |       Finished subset 3/19, 15.79 percent done
+INFO     | 2021-01-14 13:46:47,613 | progress   |       Finished subset 4/19, 21.05 percent done
+INFO     | 2021-01-14 13:48:59,781 | progress   |       Finished subset 5/19, 26.32 percent done
+INFO     | 2021-01-14 13:50:23,470 | progress   |       Finished subset 6/19, 31.58 percent done
+INFO     | 2021-01-14 13:52:34,725 | progress   |       Finished subset 7/19, 36.84 percent done
+INFO     | 2021-01-14 13:54:05,924 | progress   |       Finished subset 8/19, 42.11 percent done
+INFO     | 2021-01-14 13:55:45,594 | progress   |       Finished subset 9/19, 47.37 percent done
+INFO     | 2021-01-14 13:57:42,050 | progress   |       Finished subset 10/19, 52.63 percent done
+INFO     | 2021-01-14 13:59:32,682 | progress   |       Finished subset 11/19, 57.89 percent done
+INFO     | 2021-01-14 14:01:09,136 | progress   |       Finished subset 12/19, 63.16 percent done
+INFO     | 2021-01-14 14:03:09,193 | progress   |       Finished subset 13/19, 68.42 percent done
+INFO     | 2021-01-14 14:04:38,407 | progress   |       Finished subset 14/19, 73.68 percent done
+INFO     | 2021-01-14 14:06:02,573 | progress   |       Finished subset 15/19, 78.95 percent done
+INFO     | 2021-01-14 14:07:53,839 | progress   |       Finished subset 16/19, 84.21 percent done
+INFO     | 2021-01-14 14:09:39,345 | progress   |       Finished subset 17/19, 89.47 percent done
+INFO     | 2021-01-14 14:11:55,319 | progress   |       Finished subset 18/19, 94.74 percent done
+INFO     | 2021-01-14 14:13:36,599 | progress   |       Finished subset 19/19, 100.00 percent done
+INFO     | 2021-01-14 14:13:36,600 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 14:13:36,612 | analysis_m |       Best scheme combines subsets: 'COI_C2' and 'Cytb_C3'
+INFO     | 2021-01-14 14:13:36,613 | analysis_m |       The best scheme improves the bic score by 29.76 to 63504.5
+INFO     | 2021-01-14 14:13:36,625 | analysis_m |    ***Greedy algorithm step 15***
+INFO     | 2021-01-14 14:13:36,625 | analysis_m |       Analysing 18 new subset pairs
+INFO     | 2021-01-14 14:16:12,628 | progress   |       Finished subset 1/18, 5.56 percent done
+INFO     | 2021-01-14 14:17:23,877 | progress   |       Finished subset 2/18, 11.11 percent done
+INFO     | 2021-01-14 14:17:55,587 | progress   |       Finished subset 3/18, 16.67 percent done
+INFO     | 2021-01-14 14:18:46,477 | progress   |       Finished subset 4/18, 22.22 percent done
+INFO     | 2021-01-14 14:19:10,545 | progress   |       Finished subset 5/18, 27.78 percent done
+INFO     | 2021-01-14 14:19:39,589 | progress   |       Finished subset 6/18, 33.33 percent done
+INFO     | 2021-01-14 14:20:03,790 | progress   |       Finished subset 7/18, 38.89 percent done
+INFO     | 2021-01-14 14:21:17,091 | progress   |       Finished subset 8/18, 44.44 percent done
+INFO     | 2021-01-14 14:22:05,507 | progress   |       Finished subset 9/18, 50.00 percent done
+INFO     | 2021-01-14 14:22:18,178 | progress   |       Finished subset 10/18, 55.56 percent done
+INFO     | 2021-01-14 14:23:21,355 | progress   |       Finished subset 11/18, 61.11 percent done
+INFO     | 2021-01-14 14:23:38,719 | progress   |       Finished subset 12/18, 66.67 percent done
+INFO     | 2021-01-14 14:23:57,011 | progress   |       Finished subset 13/18, 72.22 percent done
+INFO     | 2021-01-14 14:24:55,584 | progress   |       Finished subset 14/18, 77.78 percent done
+INFO     | 2021-01-14 14:25:02,879 | progress   |       Finished subset 15/18, 83.33 percent done
+INFO     | 2021-01-14 14:25:37,923 | progress   |       Finished subset 16/18, 88.89 percent done
+INFO     | 2021-01-14 14:26:53,810 | progress   |       Finished subset 17/18, 94.44 percent done
+INFO     | 2021-01-14 14:27:49,465 | progress   |       Finished subset 18/18, 100.00 percent done
+INFO     | 2021-01-14 14:27:49,465 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 14:27:49,473 | analysis_m |       Best scheme combines subsets: '28S_C1' and '28S_C2, 28S_C3'
+INFO     | 2021-01-14 14:27:49,474 | analysis_m |       The best scheme improves the bic score by 28.25 to 63476.3
+INFO     | 2021-01-14 14:27:49,509 | analysis_m |    ***Greedy algorithm step 16***
+INFO     | 2021-01-14 14:27:49,510 | analysis_m |       Analysing 17 new subset pairs
+INFO     | 2021-01-14 14:29:42,502 | progress   |       Finished subset 1/17, 5.88 percent done
+INFO     | 2021-01-14 14:30:05,720 | progress   |       Finished subset 2/17, 11.76 percent done
+INFO     | 2021-01-14 14:32:49,049 | progress   |       Finished subset 3/17, 17.65 percent done
+INFO     | 2021-01-14 14:32:54,491 | progress   |       Finished subset 4/17, 23.53 percent done
+INFO     | 2021-01-14 14:33:20,193 | progress   |       Finished subset 5/17, 29.41 percent done
+INFO     | 2021-01-14 14:34:41,784 | progress   |       Finished subset 6/17, 35.29 percent done
+INFO     | 2021-01-14 14:34:51,425 | progress   |       Finished subset 7/17, 41.18 percent done
+INFO     | 2021-01-14 14:35:15,876 | progress   |       Finished subset 8/17, 47.06 percent done
+INFO     | 2021-01-14 14:35:42,991 | progress   |       Finished subset 9/17, 52.94 percent done
+INFO     | 2021-01-14 14:36:06,316 | progress   |       Finished subset 10/17, 58.82 percent done
+INFO     | 2021-01-14 14:36:34,152 | progress   |       Finished subset 11/17, 64.71 percent done
+INFO     | 2021-01-14 14:36:59,252 | progress   |       Finished subset 12/17, 70.59 percent done
+INFO     | 2021-01-14 14:37:22,293 | progress   |       Finished subset 13/17, 76.47 percent done
+INFO     | 2021-01-14 14:37:46,623 | progress   |       Finished subset 14/17, 82.35 percent done
+INFO     | 2021-01-14 14:38:10,659 | progress   |       Finished subset 15/17, 88.24 percent done
+INFO     | 2021-01-14 14:38:55,822 | progress   |       Finished subset 16/17, 94.12 percent done
+INFO     | 2021-01-14 14:40:02,952 | progress   |       Finished subset 17/17, 100.00 percent done
+INFO     | 2021-01-14 14:40:02,953 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 14:40:02,963 | analysis_m |       Best scheme combines subsets: 'PEPCK_C3' and 'enolase_C1'
+INFO     | 2021-01-14 14:40:02,964 | analysis_m |       The best scheme improves the bic score by 26.29 to 63450.0
+INFO     | 2021-01-14 14:40:02,989 | analysis_m |    ***Greedy algorithm step 17***
+INFO     | 2021-01-14 14:40:02,990 | analysis_m |       Analysing 16 new subset pairs
+INFO     | 2021-01-14 14:42:23,255 | progress   |       Finished subset 1/16, 6.25 percent done
+INFO     | 2021-01-14 14:42:34,653 | progress   |       Finished subset 2/16, 12.50 percent done
+INFO     | 2021-01-14 14:42:57,144 | progress   |       Finished subset 3/16, 18.75 percent done
+INFO     | 2021-01-14 14:44:34,093 | progress   |       Finished subset 4/16, 25.00 percent done
+INFO     | 2021-01-14 14:45:02,245 | progress   |       Finished subset 5/16, 31.25 percent done
+INFO     | 2021-01-14 14:45:15,527 | progress   |       Finished subset 6/16, 37.50 percent done
+INFO     | 2021-01-14 14:45:39,230 | progress   |       Finished subset 7/16, 43.75 percent done
+INFO     | 2021-01-14 14:46:33,764 | progress   |       Finished subset 8/16, 50.00 percent done
+INFO     | 2021-01-14 14:46:35,626 | progress   |       Finished subset 9/16, 56.25 percent done
+INFO     | 2021-01-14 14:46:47,227 | progress   |       Finished subset 10/16, 62.50 percent done
+INFO     | 2021-01-14 14:47:42,357 | progress   |       Finished subset 11/16, 68.75 percent done
+INFO     | 2021-01-14 14:47:46,116 | progress   |       Finished subset 12/16, 75.00 percent done
+INFO     | 2021-01-14 14:48:10,582 | progress   |       Finished subset 13/16, 81.25 percent done
+INFO     | 2021-01-14 14:48:20,998 | progress   |       Finished subset 14/16, 87.50 percent done
+INFO     | 2021-01-14 14:49:12,435 | progress   |       Finished subset 15/16, 93.75 percent done
+INFO     | 2021-01-14 14:49:42,794 | progress   |       Finished subset 16/16, 100.00 percent done
+INFO     | 2021-01-14 14:49:42,795 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 14:49:42,802 | analysis_m |       Best scheme combines subsets: 'NaK_C2' and 'enolase_C2'
+INFO     | 2021-01-14 14:49:42,802 | analysis_m |       The best scheme improves the bic score by 25.60 to 63424.4
+INFO     | 2021-01-14 14:49:42,804 | analysis_m |    ***Greedy algorithm step 18***
+INFO     | 2021-01-14 14:49:42,804 | analysis_m |       Analysing 15 new subset pairs
+INFO     | 2021-01-14 14:51:59,816 | progress   |       Finished subset 1/15, 6.67 percent done
+INFO     | 2021-01-14 14:52:15,615 | progress   |       Finished subset 2/15, 13.33 percent done
+INFO     | 2021-01-14 14:54:07,628 | progress   |       Finished subset 3/15, 20.00 percent done
+INFO     | 2021-01-14 14:55:22,537 | progress   |       Finished subset 4/15, 26.67 percent done
+INFO     | 2021-01-14 14:55:46,939 | progress   |       Finished subset 5/15, 33.33 percent done
+INFO     | 2021-01-14 14:56:26,523 | progress   |       Finished subset 6/15, 40.00 percent done
+INFO     | 2021-01-14 14:56:39,196 | progress   |       Finished subset 7/15, 46.67 percent done
+INFO     | 2021-01-14 14:57:24,375 | progress   |       Finished subset 8/15, 53.33 percent done
+INFO     | 2021-01-14 14:57:35,372 | progress   |       Finished subset 9/15, 60.00 percent done
+INFO     | 2021-01-14 14:57:57,329 | progress   |       Finished subset 10/15, 66.67 percent done
+INFO     | 2021-01-14 14:58:08,155 | progress   |       Finished subset 11/15, 73.33 percent done
+INFO     | 2021-01-14 14:58:19,124 | progress   |       Finished subset 12/15, 80.00 percent done
+INFO     | 2021-01-14 14:58:32,191 | progress   |       Finished subset 13/15, 86.67 percent done
+INFO     | 2021-01-14 14:59:05,253 | progress   |       Finished subset 14/15, 93.33 percent done
+INFO     | 2021-01-14 14:59:18,865 | progress   |       Finished subset 15/15, 100.00 percent done
+INFO     | 2021-01-14 14:59:18,866 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 14:59:18,872 | analysis_m |       Best scheme combines subsets: 'NaK_C3' and 'enolase_C3, PEPCK_C2'
+INFO     | 2021-01-14 14:59:18,872 | analysis_m |       The best scheme improves the bic score by 14.41 to 63410.0
+INFO     | 2021-01-14 14:59:18,892 | analysis_m |    ***Greedy algorithm step 19***
+INFO     | 2021-01-14 14:59:18,892 | analysis_m |       Analysing 14 new subset pairs
+INFO     | 2021-01-14 15:01:24,303 | progress   |       Finished subset 1/14, 7.14 percent done
+INFO     | 2021-01-14 15:01:57,750 | progress   |       Finished subset 2/14, 14.29 percent done
+INFO     | 2021-01-14 15:02:18,833 | progress   |       Finished subset 3/14, 21.43 percent done
+INFO     | 2021-01-14 15:04:13,938 | progress   |       Finished subset 4/14, 28.57 percent done
+INFO     | 2021-01-14 15:05:00,717 | progress   |       Finished subset 5/14, 35.71 percent done
+INFO     | 2021-01-14 15:05:16,561 | progress   |       Finished subset 6/14, 42.86 percent done
+INFO     | 2021-01-14 15:06:17,279 | progress   |       Finished subset 7/14, 50.00 percent done
+INFO     | 2021-01-14 15:06:39,589 | progress   |       Finished subset 8/14, 57.14 percent done
+INFO     | 2021-01-14 15:07:27,440 | progress   |       Finished subset 9/14, 64.29 percent done
+INFO     | 2021-01-14 15:07:43,261 | progress   |       Finished subset 10/14, 71.43 percent done
+INFO     | 2021-01-14 15:07:56,602 | progress   |       Finished subset 11/14, 78.57 percent done
+INFO     | 2021-01-14 15:08:09,956 | progress   |       Finished subset 12/14, 85.71 percent done
+INFO     | 2021-01-14 15:09:17,891 | progress   |       Finished subset 13/14, 92.86 percent done
+INFO     | 2021-01-14 15:09:59,302 | progress   |       Finished subset 14/14, 100.00 percent done
+INFO     | 2021-01-14 15:09:59,302 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 15:09:59,309 | analysis_m |       Best scheme combines subsets: 'NaK_C1' and 'PEPCK_C3, enolase_C1'
+INFO     | 2021-01-14 15:09:59,309 | analysis_m |       The best scheme improves the bic score by 10.43 to 63399.6
+INFO     | 2021-01-14 15:09:59,310 | analysis_m |    ***Greedy algorithm step 20***
+INFO     | 2021-01-14 15:09:59,310 | analysis_m |       Analysing 13 new subset pairs
+INFO     | 2021-01-14 15:12:10,277 | progress   |       Finished subset 1/13, 7.69 percent done
+INFO     | 2021-01-14 15:12:28,847 | progress   |       Finished subset 2/13, 15.38 percent done
+INFO     | 2021-01-14 15:12:52,808 | progress   |       Finished subset 3/13, 23.08 percent done
+INFO     | 2021-01-14 15:14:24,875 | progress   |       Finished subset 4/13, 30.77 percent done
+INFO     | 2021-01-14 15:14:39,515 | progress   |       Finished subset 5/13, 38.46 percent done
+INFO     | 2021-01-14 15:15:34,873 | progress   |       Finished subset 6/13, 46.15 percent done
+INFO     | 2021-01-14 15:16:44,777 | progress   |       Finished subset 7/13, 53.85 percent done
+INFO     | 2021-01-14 15:16:48,388 | progress   |       Finished subset 8/13, 61.54 percent done
+INFO     | 2021-01-14 15:17:44,953 | progress   |       Finished subset 9/13, 69.23 percent done
+INFO     | 2021-01-14 15:17:46,117 | progress   |       Finished subset 10/13, 76.92 percent done
+INFO     | 2021-01-14 15:18:04,911 | progress   |       Finished subset 11/13, 84.62 percent done
+INFO     | 2021-01-14 15:19:09,997 | progress   |       Finished subset 12/13, 92.31 percent done
+INFO     | 2021-01-14 15:19:44,472 | progress   |       Finished subset 13/13, 100.00 percent done
+INFO     | 2021-01-14 15:19:44,472 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 15:19:44,478 | analysis_m |       Best scheme combines subsets: 'ND1_C2' and 'COI_C2, Cytb_C3'
+INFO     | 2021-01-14 15:19:44,478 | analysis_m |       The best scheme improves the bic score by 9.67 to 63389.9
+INFO     | 2021-01-14 15:19:44,479 | analysis_m |    ***Greedy algorithm step 21***
+INFO     | 2021-01-14 15:19:44,479 | analysis_m |       Analysing 12 new subset pairs
+INFO     | 2021-01-14 15:22:26,534 | progress   |       Finished subset 1/12, 8.33 percent done
+INFO     | 2021-01-14 15:22:29,542 | progress   |       Finished subset 2/12, 16.67 percent done
+INFO     | 2021-01-14 15:24:07,461 | progress   |       Finished subset 3/12, 25.00 percent done
+INFO     | 2021-01-14 15:24:34,716 | progress   |       Finished subset 4/12, 33.33 percent done
+INFO     | 2021-01-14 15:25:06,927 | progress   |       Finished subset 5/12, 41.67 percent done
+INFO     | 2021-01-14 15:26:34,102 | progress   |       Finished subset 6/12, 50.00 percent done
+INFO     | 2021-01-14 15:28:09,063 | progress   |       Finished subset 7/12, 58.33 percent done
+INFO     | 2021-01-14 15:28:23,032 | progress   |       Finished subset 8/12, 66.67 percent done
+INFO     | 2021-01-14 15:29:40,810 | progress   |       Finished subset 9/12, 75.00 percent done
+INFO     | 2021-01-14 15:31:02,924 | progress   |       Finished subset 10/12, 83.33 percent done
+INFO     | 2021-01-14 15:32:20,330 | progress   |       Finished subset 11/12, 91.67 percent done
+INFO     | 2021-01-14 15:32:59,934 | progress   |       Finished subset 12/12, 100.00 percent done
+INFO     | 2021-01-14 15:32:59,935 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 15:32:59,940 | analysis_m |       Best scheme combines subsets: '28S_C1, 28S_C2, 28S_C3' and 'NaK_C2, enolase_C2'
+INFO     | 2021-01-14 15:32:59,941 | analysis_m |       The best scheme improves the bic score by 3.47 to 63386.4
+INFO     | 2021-01-14 15:32:59,955 | analysis_m |    ***Greedy algorithm step 22***
+INFO     | 2021-01-14 15:32:59,955 | analysis_m |       Analysing 11 new subset pairs
+INFO     | 2021-01-14 15:35:20,299 | progress   |       Finished subset 1/11, 9.09 percent done
+INFO     | 2021-01-14 15:35:47,832 | progress   |       Finished subset 2/11, 18.18 percent done
+INFO     | 2021-01-14 15:37:20,667 | progress   |       Finished subset 3/11, 27.27 percent done
+INFO     | 2021-01-14 15:37:55,223 | progress   |       Finished subset 4/11, 36.36 percent done
+INFO     | 2021-01-14 15:38:29,843 | progress   |       Finished subset 5/11, 45.45 percent done
+INFO     | 2021-01-14 15:39:22,102 | progress   |       Finished subset 6/11, 54.55 percent done
+INFO     | 2021-01-14 15:40:54,097 | progress   |       Finished subset 7/11, 63.64 percent done
+INFO     | 2021-01-14 15:41:13,254 | progress   |       Finished subset 8/11, 72.73 percent done
+INFO     | 2021-01-14 15:41:48,508 | progress   |       Finished subset 9/11, 81.82 percent done
+INFO     | 2021-01-14 15:43:06,434 | progress   |       Finished subset 10/11, 90.91 percent done
+INFO     | 2021-01-14 15:43:34,525 | progress   |       Finished subset 11/11, 100.00 percent done
+INFO     | 2021-01-14 15:43:34,526 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-01-14 15:43:34,528 | analysis_m |       Found no schemes that improve the score, stopping
+INFO     | 2021-01-14 15:43:34,528 | analysis_m |    Greedy algorithm finished after 22 steps
+INFO     | 2021-01-14 15:43:34,528 | analysis_m |    Best scoring scheme is scheme step_21, with bic score of 63386.421
+INFO     | 2021-01-14 15:43:34,529 | model_util |    Information on best scheme is here: ./analysis/best_scheme.txt
+INFO     | 2021-01-14 15:43:34,535 | model_util |    
+INFO     | 2021-01-14 15:43:34,535 | model_util |    
+INFO     | 2021-01-14 15:43:34,535 | model_util |    *Citations for this analysis*
+INFO     | 2021-01-14 15:43:34,535 | model_util |    -----------------------------
+INFO     | 2021-01-14 15:43:34,535 | model_util |    
+INFO     | 2021-01-14 15:43:34,535 | model_util |    If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+INFO     | 2021-01-14 15:43:34,536 | model_util |    
+INFO     | 2021-01-14 15:43:34,536 | model_util |    For the version of PartitionFinder you used, please cite:
+INFO     | 2021-01-14 15:43:34,536 | model_util |    Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+INFO     | 2021-01-14 15:43:34,536 | model_util |    
+INFO     | 2021-01-14 15:43:34,536 | model_util |    For the greedy algorithm you used, please cite:
+INFO     | 2021-01-14 15:43:34,536 | model_util |    Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+INFO     | 2021-01-14 15:43:34,536 | model_util |    
+INFO     | 2021-01-14 15:43:34,536 | model_util |    Your analysis also used PhyML, so please cite:
+INFO     | 2021-01-14 15:43:34,536 | model_util |    Guindon, S., Dufayard, J. F., Lefort, V., Anisimova, M., Hordijk, W., & Gascuel, O. (2010). New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. Systematic biology, 59(3), 307-321.
+INFO     | 2021-01-14 15:43:34,536 | model_util |    
+INFO     | 2021-01-14 15:43:34,574 | main       | Total processing time: 9:48:28 (h:m:s)
+INFO     | 2021-01-14 15:43:34,574 | main       | Processing complete.
