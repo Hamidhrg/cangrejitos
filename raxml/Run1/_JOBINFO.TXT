@@ -1,0 +1,14 @@
+Task\ label=RaxML2.1
+Task\ ID=2191736
+Tool=RAXMLHPC2_TGB
+created\ on=2020-05-25 06:23:38.0
+JobHandle=NGBW-JOB-RAXMLHPC2_TGB-3F7D065AA5264223B7F75C9116204BE1
+RunNumber=1
+resource=comet
+User\ ID=103509
+User\ Name=panizrm
+email=panizrm@hotmail.com
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=48
+JOBID=33595465

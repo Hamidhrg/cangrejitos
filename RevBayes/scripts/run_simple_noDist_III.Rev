@@ -1,0 +1,251 @@
+#!/usr/bin/rb
+
+# filenames
+range_fn = "data/Potamon.n7.range.nex"
+tree_fn   = "data/InGroup.nex"
+out_fn   = "output/Simple"
+geo_fn   = "data/Potamon.n7"
+times_fn = geo_fn + ".times.txt"
+#dist_fn  = geo_fn + ".distances.txt"
+
+########
+# data #
+########
+
+# read binary (01) presence-absence range data
+dat_range_01 = readDiscreteCharacterData(range_fn)
+
+# convert binary ranges into NaturalNumbers
+dat_range_n = formatDiscreteCharacterData(dat_range_01, "DEC")
+
+#Check size of each vector
+dat_range_n.size()
+dat_range_01.size()
+
+# compare characters for two taxa
+dat_range_01[1]
+dat_range_n[1]
+
+# data dimensions
+n_areas  = dat_range_01.nchar()
+n_states = floor(2^n_areas)
+
+#There are 64 ranges or states for 6 areas (2exp(6)). We are going to reduce the size of the Q matrix by applying constraints
+max_areas <- 2
+n_states <- 0
+for (k in 0:max_areas) n_states += choose(n_areas,k)
+
+#Now number of states (n_states) is 22: equivalent to a sum of combinatorial elements (6 "chooses" 1 + 6 "chooses" 2)
+#Notice that "empty range" is a state in the model!! So we have 22 instead of 21
+#Then use the new "n_states" to format the dataset for the reduced state space
+
+dat_range_n = formatDiscreteCharacterData(dat_range_01, "DEC", n_states)
+
+# get the converted state descriptions (OBS: The sample.txt does not consider max_size argument) 
+state_desc = dat_range_n.getStateDescriptions()
+
+# write the state descriptions to file
+state_desc_str = "state,range\n"
+for (i in 1:state_desc.size())
+{
+    state_desc_str += (i-1) + "," + state_desc[i] + "\n"
+}
+write(state_desc_str, file=out_fn+".state_labels.txt")
+
+# move/monitor index (n_gen = 10000) ###test with more generations also!!
+mvi = 1
+mni = 1
+n_gen = 50000
+
+###############
+# Tree models #
+###############
+
+# read tree
+tree <- readTrees(tree_fn)[1]
+
+
+############################################################
+######### epoch, connectivity, distances ###################
+############################################################
+# epoch times
+time_bounds <- readDataDelimitedFile(file=times_fn, delimiter=" ")
+n_epochs <- 1 #time_bounds.nrows() # changes this to number of timeslices
+
+# epoch connectivity
+for (i in 1:n_epochs) {
+    epoch_fn = geo_fn + ".connectivity." + i + ".txt"
+    connectivity[i] <- readDataDelimitedFile(file=epoch_fn, delimiter=" ")
+}
+
+# area distances
+#distances <- readDataDelimitedFile(file=dist_fn, delimiter=" ")
+
+
+#######################
+# Biogeography models #
+#######################
+
+# Set the biogeographic event rate multiplier. This assigns the migration rate baseline for the dispersal and extinction rate instantaneous Q matrix.
+# In the tutorial example, this is set to be quite broad or uninformative. "range_bg" is set as a uniform distribution bounded 
+# between 0.0001 (10exp(-4)) and 100 (10exp(2)), with an initial value of 0.01 (10exp(-2)).
+
+log10_rate_bg ~ dnUniform(-4,2)
+log10_rate_bg.setValue(-2)
+rate_bg := 10^log10_rate_bg
+moves[mvi++] = mvSlide(log10_rate_bg, weight=4)
+
+# Another possibility is to set log10_rate_bg to a uniform with narrower bounds, giving rate_bg bounds (between 10exp(-3) and 10exp(1): 0.001-10)
+
+log10_rate_bg ~ dnUniform(-3,1)
+log10_rate_bg.setValue(-2)
+rate_bg := 10^log10_rate_bg
+moves[mvi++] = mvSlide(log10_rate_bg, weight=4)
+
+# the relative dispersal rate
+dispersal_rate <- 1.0
+
+####################### changed from epoch model #######################
+# the geographical distance scaling factor. The "distance_scale" parameter (a) is used 
+# below to scale the baseline dispersal rate by the inverse of the geographic distance.
+# If (a) is 0 (no scaling), then the dispersal rate is equal for all areas.
+# This code below can be commented out if no distance correction is applied.
+
+#distance_scale ~ dnUnif(0,20)
+#distance_scale.setValue(0.01)
+#moves[mvi++] = mvScale(distance_scale, weight=3)
+
+# Create the dispersal rate matrix. 
+# If no distance correction, replace dr[i][j][k] := dispersal_rate * exp(-distance_scale * distances[j][k])
+# dr[i][j][k] := dispersal_rate * (connectivity[i][j][k])
+# This will create a matrix [j][k] for every epoch [i] in which each cell is filled with the 
+# dispersal scaler value: 1* 0.1, 1* 1, 1*0.5, 1*0.7
+
+# Remove the distance part...
+
+for (i in 1:n_epochs) {
+    for (j in 1:n_areas) {
+        for (k in 1:n_areas) {
+            dr[i][j][k] <- 0.0
+            if (connectivity[i][j][k] > 0) {
+                dr[i][j][k] := dispersal_rate * (connectivity[i][j][k])
+            }
+                
+            }
+        }
+    }
+
+
+# then the relative extirpation rate (or per-area extinction rates)
+log_sd <- 0.5
+log_mean <- ln(1) - 0.5*log_sd^2
+extirpation_rate ~ dnLognormal(mean=log_mean, sd=log_sd)
+moves[mvi++] = mvScale(extirpation_rate, weight=2)
+
+
+####################### changed from epoch model #######################
+# the extirpation rate matrix
+for (i in 1:n_epochs) {
+    for (j in 1:n_areas) {
+        for (k in 1:n_areas) {
+            er[i][j][k] <- 0.0
+        }
+        er[i][j][j] := extirpation_rate
+    }
+}
+
+# build DEC rate matrices
+# for (i in 1:n_epochs) {
+for (i in n_epochs:1) {
+    Q_DEC[i] := fnDECRateMatrix(dispersalRates=dr[i],
+                                extirpationRates=er[i],
+                                maxRangeSize=max_areas)
+}
+
+# build the times
+for (i in 1:n_epochs) {
+    time_max[i] <- time_bounds[i][1]
+    time_min[i] <- time_bounds[i][2]
+
+    if (i == n_epochs) {
+        epoch_times[i] <- 0.0
+    } else {
+        epoch_times[i] ~ dnUniform(time_min[i], time_max[i])
+        moves[mvi++] = mvSlide(epoch_times[i], delta=(time_max[i]-time_min[i])/2)
+    }
+}
+
+# combine the epoch rate matrices and times
+Q_DEC_epoch := fnEpoch(Q=Q_DEC, times=epoch_times, rates=rep(1, n_epochs))
+
+####################### changed from epoch model #######################
+# Build cladogenetic transition probabilities. Only sympatry (wide or peripatry, narrow) and allopatry (vicariance) are allowed.
+# We assign a flat fixed prior through a simplex (same probability for the two events)
+clado_event_types <- [ "s", "a" ]
+clado_type_probs <- simplex(1, 1)
+
+# Another possibility is to assign a simplex that sums to 1, but the proportion of the prior for each event is different.
+#p_sympatry ~ dnUniform(0,1)
+#p_allopatry := abs(1.0 - p_sympatry)
+#clado_type_probs := simplex(p_sympatry, p_allopatry)
+#moves[mvi++] = mvSlide(p_sympatry, weight=2)
+
+P_DEC := fnDECCladoProbs(eventProbs=clado_type_probs,
+                         eventTypes=clado_event_types,
+                         numCharacters=n_areas,
+                         maxRangeSize=max_areas)
+
+# The epoch model requires to assign Root frequencies
+# In our model, all ancestral ranges are equally likely for the root
+# First, populate the root matrix with "1"
+rf_DEC_tmp    <- rep(1, n_states)
+#Then, assign a simplex (equal probability) to all elements 
+rf_DEC    <- simplex(rf_DEC_tmp)
+
+# Construct the phylogenetic CTMC with cladogenetic events
+m_bg ~ dnPhyloCTMCClado(tree=tree,
+                           Q=Q_DEC_epoch,
+                           cladoProbs=P_DEC,
+                           branchRates=rate_bg,
+                           rootFrequencies=rf_DEC,
+                           type="NaturalNumbers",
+                           nSites=1)
+    
+# attach the range data
+m_bg.clamp(dat_range_n)
+
+############
+# Monitors #
+############
+
+monitors[mni++] = mnScreen(printgen=10, rate_bg, extirpation_rate)
+monitors[mni++] = mnModel(file=out_fn+".model.log", printgen=100)
+monitors[mni++] = mnFile(tree, filename=out_fn+".tre", printgen=100)
+monitors[mni++] = mnJointConditionalAncestralState(tree=tree,
+                                                       ctmc=m_bg,
+                                                       type="NaturalNumbers",
+                                                       withTips=true,
+                                                       withStartStates=true,
+                                                       filename=out_fn+".states.log",
+                                                       printgen=100)
+monitors.append( mnStochasticCharacterMap(ctmc=m_bg,
+                                          filename=out_fn+".stoch.log",
+                                          printgen=100) )
+############
+# Analysis #
+############
+
+# build the model analysis object from the model graph
+mymodel = model(m_bg)
+
+# create the MCMC analysis object
+mymcmc = mcmc(mymodel, monitors, moves)
+
+# run the MCMC analysis
+mymcmc.run(n_gen)
+
+
+# exit
+quit()
+
+
