@@ -1,1 +1,0 @@
-Results from MrBayes analyses.
