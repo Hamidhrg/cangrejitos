@@ -1,0 +1,14 @@
+Task\ label=MB1_1.2
+Task\ ID=2191949
+Tool=MRBAYES_XSEDE
+created\ on=2020-05-25 09:17:22.0
+JobHandle=NGBW-JOB-MRBAYES_XSEDE-0BE0C5C27EE24DE487B6608ABF3D822A
+RunNumber=1
+resource=comet
+User\ ID=103509
+User\ Name=panizrm
+email=panizrm@hotmail.com
+Output=(ALL_FILES,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=8
+JOBID=33598949

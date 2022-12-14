@@ -1,0 +1,5 @@
+set autoclose=yes
+set nowarnings=yes
+set usebeagle=no
+execute infile.nex
+quit
